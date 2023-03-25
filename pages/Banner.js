@@ -86,14 +86,6 @@ export default function Banner() {
                     </a>
                   ))}
                 </div>
-                <div className="py-6">
-                  <a
-                    href="#"
-                    className="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >
-                    Log in
-                  </a>
-                </div>
               </div>
             </div>
           </Dialog.Panel>
@@ -112,7 +104,7 @@ export default function Banner() {
               <polygon points="0,0 90,0 50,100 0,100" />
             </svg>
 
-            <div className="relative py-32 px-6 sm:py-40 lg:py-56 lg:px-8 lg:pr-0">
+            <div className="relative py-20 px-6 sm:py-40 lg:py-56 lg:px-8 lg:pr-0">
               <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
                 <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
                   Partnering for your business growth
