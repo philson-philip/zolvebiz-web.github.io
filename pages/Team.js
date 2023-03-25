@@ -44,11 +44,11 @@ export default function Example() {
             Our Team
           </h2>
           <p className="mt-4 text-lg leading-8 text-gray-600">
-            Our team includes chartered accountants, company secretaries,
-            lawyers, accounting professionals and registered valuer who listen
-            deeply, understand the core of the problem to be solved and can
-            produce innovative solutions that create exponential value for our
-            client
+            At our business consulting firm, we pride ourselves on having a team
+            of highly skilled and experienced professionals. Our consultants
+            come from diverse backgrounds and possess a wide range of expertise,
+            enabling us to provide comprehensive solutions to our clients'
+            unique business challenges.
           </p>
         </div>
         <ul

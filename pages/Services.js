@@ -22,7 +22,7 @@ export default function Services() {
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
           <dl className="grid max-w-xl grid-cols-1 gap-y-10 gap-x-8 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
             <div className="relative pl-16">
-              <dt className="text-base font-semibold leading-7 text-gray-900">
+              <dt className="text-xl font-semibold leading-7 text-gray-900">
                 <div className="absolute top-0 left-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
                   <AcademicCapIcon
                     className="h-6 w-6 text-white"
@@ -47,7 +47,7 @@ export default function Services() {
               </p>
             </div>
             <div className="relative pl-16">
-              <dt className="text-base font-semibold leading-7 text-gray-900">
+              <dt className="text-xl font-semibold leading-7 text-gray-900">
                 <div className="absolute top-0 left-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
                   <ClipboardDocumentCheckIcon
                     className="h-6 w-6 text-white"
@@ -73,7 +73,7 @@ export default function Services() {
               </p>
             </div>
             <div className="relative pl-16">
-              <dt className="text-base font-semibold leading-7 text-gray-900">
+              <dt className="text-xl font-semibold leading-7 text-gray-900">
                 <div className="absolute top-0 left-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
                   <BanknotesIcon
                     className="h-6 w-6 text-white"
@@ -100,7 +100,7 @@ export default function Services() {
               </p>
             </div>
             <div className="relative pl-16">
-              <dt className="text-base font-semibold leading-7 text-gray-900">
+              <dt className="text-xl font-semibold leading-7 text-gray-900">
                 <div className="absolute top-0 left-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
                   <GlobeAltIcon
                     className="h-6 w-6 text-white"

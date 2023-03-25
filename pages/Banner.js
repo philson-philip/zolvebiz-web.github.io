@@ -4,6 +4,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Logo from "../public/images/logo.png";
 import BannerIMG from "../public/images/banner.jpg";
+import ZolvebizIMG from "../public/images/zolvebiz.png";
 
 const navigation = [
   { name: "Home", href: "#" },
@@ -106,10 +107,13 @@ export default function Banner() {
 
             <div className="relative py-20 px-6 sm:py-40 lg:py-56 lg:px-8 lg:pr-0">
               <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
-                <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                <h1 className="zolvebiz-logo-font text-4xl font-bold tracking-wide text-gray-900 sm:text-5xl uppercase mb-2 sm:mb-4">
+                  Zolvebiz
+                </h1>
+                <h1 className="text-3xl font-bold tracking-wide text-gray-800 sm:text-5xl">
                   Partnering for your business growth
                 </h1>
-                <p className="mt-6 text-lg leading-8 text-gray-600">
+                <p className="mt-6 text-base leading-8 text-gray-600">
                   Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
                   qui lorem cupidatat commodo. Elit sunt amet fugiat veniam
                   occaecat fugiat aliqua.
