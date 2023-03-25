@@ -4,6 +4,8 @@ import Script from "next/script";
 import styles from "../styles/Home.module.css";
 
 import Banner from "./Banner";
+import Services from "./Services";
+import Team from "./Team";
 
 export default function Home() {
   return (
@@ -15,6 +17,8 @@ export default function Home() {
       </Head>
 
       <Banner />
+      <Services />
+      <Team />
     </div>
   );
 }

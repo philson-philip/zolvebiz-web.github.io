@@ -1,13 +1,16 @@
 import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import Image from "next/image";
+import Logo from "../public/images/logo.png";
+import BannerIMG from "../public/images/banner.jpg";
 
 const navigation = [
-  { name: "Product", href: "#" },
-  { name: "Features", href: "#" },
-  { name: "Marketplace", href: "#" },
-  { name: "Company", href: "#" },
-  { name: "Log in", href: "#" },
+  { name: "Home", href: "#" },
+  { name: "About", href: "#" },
+  { name: "Services", href: "#" },
+  { name: "Team", href: "#" },
+  { name: "Contact", href: "#" },
 ];
 
 export default function Banner() {
@@ -23,12 +26,8 @@ export default function Banner() {
               aria-label="Global"
             >
               <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
-                <img
-                  alt="Your Company"
-                  className="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                />
+                <span className="sr-only">Zolvebiz</span>
+                <Image alt="Zolvebiz" className="h-12 w-auto" src={Logo} />
               </a>
               <button
                 type="button"
@@ -62,12 +61,8 @@ export default function Banner() {
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
-                <img
-                  className="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                  alt=""
-                />
+                <span className="sr-only">Zolvebiz</span>
+                <Image alt="Zolvebiz" className="h-12 w-auto" src={Logo} />
               </a>
               <button
                 type="button"
@@ -127,29 +122,15 @@ export default function Banner() {
                   qui lorem cupidatat commodo. Elit sunt amet fugiat veniam
                   occaecat fugiat aliqua.
                 </p>
-                <div className="mt-10 flex items-center gap-x-6">
-                  <a
-                    href="#"
-                    className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                  >
-                    Get started
-                  </a>
-                  <a
-                    href="#"
-                    className="text-sm font-semibold leading-6 text-gray-900"
-                  >
-                    Learn more <span aria-hidden="true">→</span>
-                  </a>
-                </div>
               </div>
             </div>
           </div>
         </div>
         <div className="bg-gray-50 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-          <img
+          <Image
             className="aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full"
-            src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80"
-            alt=""
+            src={BannerIMG}
+            alt="Zolvebiz"
           />
         </div>
       </div>
