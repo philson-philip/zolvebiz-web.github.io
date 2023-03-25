@@ -47,7 +47,7 @@ export default function Example() {
             At our business consulting firm, we pride ourselves on having a team
             of highly skilled and experienced professionals. Our consultants
             come from diverse backgrounds and possess a wide range of expertise,
-            enabling us to provide comprehensive solutions to our clients'
+            enabling us to provide comprehensive solutions to our clients&apos;
             unique business challenges.
           </p>
         </div>
