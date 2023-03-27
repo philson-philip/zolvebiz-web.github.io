@@ -33,8 +33,8 @@ export default function Home() {
       </Head>
 
       <Banner />
-      <About />
       <Services />
+      <About />
       <Team />
       <Contact />
       <Footer />
