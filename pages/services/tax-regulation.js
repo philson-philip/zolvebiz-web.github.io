@@ -6,12 +6,11 @@ import Logo from "../../public/images/logo.png";
 
 const navigation = [
   { name: "Home", href: "/" },
-  { name: "About", href: "#" },
-  { name: "Services", href: "#" },
-  { name: "Team", href: "#" },
-  { name: "Contact", href: "#" },
+  { name: "About", href: "/#about" },
+  { name: "Services", href: "/#services" },
+  { name: "Team", href: "/#team" },
+  { name: "Contact", href: "/#contact" },
 ];
-
 const footerNavigation = {
   social: [
     {
@@ -425,7 +424,7 @@ export default function Example() {
           ))}
         </div>
         <p className="mt-10 text-center text-xs leading-5 text-gray-500">
-          &copy; 2020 Your Company, Inc. All rights reserved.
+          &copy; 2023 Zolvebiz, Inc. All rights reserved.
         </p>
       </footer>
     </div>
