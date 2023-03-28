@@ -251,10 +251,10 @@ export default function Example() {
                 <ul className="list-disc ml-4">
                   <li>
                     Conduct a Thorough Assessment: ZOLBEBIZ’s start up services
-                    start by conducting a thorough assessment of the start-up's
-                    business model, market, competitors, and target customers.
-                    This will give our clients an idea of the challenges and
-                    opportunities that the start-up is facing.
+                    start by conducting a thorough assessment of the
+                    start-up&apos;s business model, market, competitors, and
+                    target customers. This will give our clients an idea of the
+                    challenges and opportunities that the start-up is facing.
                   </li>
                   <li>
                     Develop a Business Plan: Based on our assessment, we provide

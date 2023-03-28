@@ -298,7 +298,7 @@ export default function Example() {
                 organization to presents an overall picture of a proposed
                 business which helps them to ascertain the prospects and future
                 of business venture. Our business project reporting enables our
-                clients to stay on top of their projects and manage others'
+                clients to stay on top of their projects and manage others&apos;
                 expectations and it also allow our clients to consistently
                 monitor and communicate their project scope, time, budget, and
                 progress at any time to anyone who needs to know.
@@ -311,8 +311,9 @@ export default function Example() {
                     is a comprehensive document that provides an in-depth
                     analysis of a proposed business project. The report is
                     typically prepared by our team of experts and is intended to
-                    provide a detailed assessment of the project's feasibility,
-                    scope, timeline, budget, and potential risks and challenges.
+                    provide a detailed assessment of the project&apos;s
+                    feasibility, scope, timeline, budget, and potential risks
+                    and challenges.
                   </li>
                   <li>
                     <b>Business Process Design & Redesign:</b> Business process
