@@ -37,7 +37,7 @@ const people = [
 
 export default function Example() {
   return (
-    <div className="bg-white py-32">
+    <div className="bg-white py-32" id="team">
       <div className="mx-auto max-w-7xl px-6 text-center lg:px-8">
         <div className="mx-auto max-w-4xl">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">

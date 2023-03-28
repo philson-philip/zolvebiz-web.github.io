@@ -7,11 +7,11 @@ import BannerIMG from "../public/images/banner.jpg";
 import ZolvebizIMG from "../public/images/zolvebiz.png";
 
 const navigation = [
-  { name: "Home", href: "#" },
-  { name: "About", href: "#" },
-  { name: "Services", href: "#" },
-  { name: "Team", href: "#" },
-  { name: "Contact", href: "#" },
+  { name: "Home", href: "/" },
+  { name: "About", href: "#about" },
+  { name: "Services", href: "#services" },
+  { name: "Team", href: "#team" },
+  { name: "Contact", href: "#contact" },
 ];
 
 export default function Banner() {

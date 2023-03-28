@@ -1,13 +1,12 @@
-import {
-  AcademicCapIcon,
-  BanknotesIcon,
-  ClipboardDocumentCheckIcon,
-  GlobeAltIcon,
-} from "@heroicons/react/24/outline";
+import ManagementServicesImg from "../public/images/management.svg";
+import TaxImg from "../public/images/tax.svg";
+import FinanceImg from "../public/images/finance.svg";
+import StartupImg from "../public/images/startup.svg";
+import Image from "next/image";
 
 export default function Services() {
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <div className="bg-white py-24 sm:py-32" id="services">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-4xl lg:text-center">
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
@@ -16,116 +15,134 @@ export default function Services() {
           <p className="mt-6 text-lg leading-8 text-gray-600">
             We are passionate about our business and proud of our longstanding
             expertise and pleasing number of satisfied clients. We guarantee
-            every client an efficient service that exceeds their expectation.
+            every client an efficient service that exceeds their expectation. We
+            are open and honest and strive to provide pro-active business advice
+            that helps businesses and individuals meet their commercial
+            obligations and help to take decision for proper investment on time
           </p>
         </div>
-        <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-          <dl className="grid max-w-xl grid-cols-1 gap-y-10 gap-x-8 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-            <div className="relative pl-16">
-              <dt className="text-xl font-semibold leading-7 text-gray-900">
-                <div className="absolute top-0 left-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                  <AcademicCapIcon
-                    className="h-6 w-6 text-white"
-                    aria-hidden="true"
-                  />
-                </div>
+        <div className="flex flex-col mt-14 space-y-8">
+          <div className="flex flex-col sm:flex-row justify-between w-full gap-x-10 items-center max-w-5xl mx-auto">
+            <div className="w-full sm:w-1/2">
+              <h3 className="text-xl font-bold text-gray-900 tracking-tight sm:text-2xl">
                 Management Consultancy
-              </dt>
-              <ul className="mt-2 text-base leading-7 text-gray-600 list-disc ml-4">
-                <li>Management Accounting Services</li>
-                <li>Franchise Business Strategy</li>
-                <li>Business Project Report</li>
-                <li>Virtual CFO</li>
-              </ul>
-              <p className="mt-3">
+              </h3>
+              <p className="mt-3 text-base font-light leading-relaxed text-gray-600">
+                Management consultancy involves providing expert advice and
+                guidance to businesses and organizations on improving their
+                operations, efficiency, and overall performance. Consultants use
+                their knowledge and experience to identify problems, develop
+                solutions, and implement strategies to help clients achieve
+                their goals.
+              </p>
+              <p className="mt-6">
                 <a
-                  href=""
-                  className="text-sm font-semibold leading-6 text-indigo-600"
+                  href={`/services/management-consultancy`}
+                  className="text-base font-medium leading-6 text-indigo-600"
                 >
                   Learn more <span aria-hidden="true">→</span>
                 </a>
               </p>
             </div>
-            <div className="relative pl-16">
-              <dt className="text-xl font-semibold leading-7 text-gray-900">
-                <div className="absolute top-0 left-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                  <ClipboardDocumentCheckIcon
-                    className="h-6 w-6 text-white"
-                    aria-hidden="true"
-                  />
-                </div>
+            <div className="mt-6 w-full sm:w-1/2">
+              <Image
+                className="w-4/5 mx-auto"
+                src={ManagementServicesImg}
+                alt="Management Services"
+              />
+            </div>
+          </div>
+
+          <div className="flex flex-col sm:flex-row-reverse justify-between w-full gap-x-10 items-center max-w-5xl mx-auto">
+            <div className="w-full sm:w-1/2">
+              <h3 className="text-xl font-bold text-gray-900 tracking-tight sm:text-2xl">
                 Tax & Regulation
-              </dt>
-              <ul className="mt-2 text-base leading-7 text-gray-600 list-disc ml-4">
-                <li>Tax Compliance</li>
-                <li>Income tax & GST Advisory</li>
-                <li>SEZ Compliance</li>
-                <li>Foreign Exchange & RBI</li>
-                <li>Compliance</li>
-              </ul>
-              <p className="mt-3">
+              </h3>
+              <p className="mt-3 text-base font-light leading-relaxed text-gray-600">
+                Tax & regulation are important factors that affect businesses
+                and individuals, as they determine the amount of taxes to be
+                paid and the rules that must be followed to avoid penalties and
+                legal issues. Consulting services in this area can help navigate
+                the complexities of tax and regulatory compliance, reducing
+                risks and maximizing benefits.
+              </p>
+              <p className="mt-6">
                 <a
-                  href=""
-                  className="text-sm font-semibold leading-6 text-indigo-600"
+                  href={`tax-regulation`}
+                  className="text-base font-medium leading-6 text-indigo-600"
                 >
                   Learn more <span aria-hidden="true">→</span>
                 </a>
               </p>
             </div>
-            <div className="relative pl-16">
-              <dt className="text-xl font-semibold leading-7 text-gray-900">
-                <div className="absolute top-0 left-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                  <BanknotesIcon
-                    className="h-6 w-6 text-white"
-                    aria-hidden="true"
-                  />
-                </div>
+            <div className="mt-6 w-full sm:w-1/2">
+              <Image
+                className="w-4/5 mx-auto"
+                src={TaxImg}
+                alt="Management Services"
+              />
+            </div>
+          </div>
+
+          <div className="flex flex-col sm:flex-row justify-between w-full gap-x-10 items-center max-w-5xl mx-auto">
+            <div className="w-full sm:w-1/2">
+              <h3 className="text-xl font-bold text-gray-900 tracking-tight sm:text-2xl">
                 Financial & Accounting
-              </dt>
-              <ul className="mt-2 text-base leading-7 text-gray-600 list-disc ml-4">
-                <li>Internal Audit</li>
-                <li>Audit Support Services</li>
-                <li>Accounting Advisory Services</li>
-                <li>Book-keeping Services</li>
-                <li>Payroll Management</li>
-                <li>Business Valuation</li>
-              </ul>
-              <p className="mt-3">
+              </h3>
+              <p className="mt-3 text-base font-light leading-relaxed text-gray-600">
+                Financial & accounting services involve the management of
+                financial information, including financial reporting,
+                bookkeeping, and tax preparation. These services are critical to
+                ensuring that businesses maintain accurate financial records and
+                comply with relevant regulations.
+              </p>
+              <p className="mt-6">
                 <a
-                  href=""
-                  className="text-sm font-semibold leading-6 text-indigo-600"
+                  href={`/services/financial-accounting`}
+                  className="text-base font-medium leading-6 text-indigo-600"
                 >
                   Learn more <span aria-hidden="true">→</span>
                 </a>
               </p>
             </div>
-            <div className="relative pl-16">
-              <dt className="text-xl font-semibold leading-7 text-gray-900">
-                <div className="absolute top-0 left-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                  <GlobeAltIcon
-                    className="h-6 w-6 text-white"
-                    aria-hidden="true"
-                  />
-                </div>
+            <div className="mt-6 w-full sm:w-1/2">
+              <Image
+                className="w-4/5 mx-auto"
+                src={FinanceImg}
+                alt="Management Services"
+              />
+            </div>
+          </div>
+
+          <div className="flex flex-col sm:flex-row-reverse justify-between w-full gap-x-10 items-center max-w-5xl mx-auto">
+            <div className="w-full sm:w-1/2">
+              <h3 className="text-xl font-bold text-gray-900 tracking-tight sm:text-2xl">
                 Incorporation & Startup Services
-              </dt>
-              <dd className="mt-2 text-base leading-7 text-gray-600">
+              </h3>
+              <p className="mt-3 text-base font-light leading-relaxed text-gray-600">
                 Incorporation creates a separate legal entity and limits the
                 liability of business owners. Startup services provide
                 assistance to entrepreneurs in launching and growing their
                 businesses, covering everything from planning and branding to
                 marketing and advertising.
-              </dd>
-              <p className="mt-3">
+              </p>
+              <p className="mt-6">
                 <a
-                  href=""
-                  className="text-sm font-semibold leading-6 text-indigo-600"
+                  href={`/services/incorporation-startup-services`}
+                  className="text-base font-medium leading-6 text-indigo-600"
                 >
                   Learn more <span aria-hidden="true">→</span>
                 </a>
               </p>
             </div>
-          </dl>
+            <div className="mt-6 w-full sm:w-1/2">
+              <Image
+                className="w-4/5 mx-auto"
+                src={StartupImg}
+                alt="Management Services"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>

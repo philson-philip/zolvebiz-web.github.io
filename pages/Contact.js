@@ -20,7 +20,7 @@ import {
 
 export default function Contact() {
   return (
-    <div className="relative isolate sm:bg-gray-100 bg-white">
+    <div className="relative isolate sm:bg-gray-100 bg-white" id="contact">
       <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
         <div className="relative px-6 pt-24 pb-20 sm:pt-32 lg:static lg:py-48 lg:px-8">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
