@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function Services() {
   return (
-    <div className="bg-white py-24 sm:py-32" id="services">
+    <div className="bg-white py-12 sm:py-16" id="services">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-4xl lg:text-center">
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
@@ -68,7 +68,7 @@ export default function Services() {
               </p>
               <p className="mt-6">
                 <a
-                  href={`tax-regulation`}
+                  href={`/services/tax-regulation`}
                   className="text-base font-medium leading-6 text-indigo-600"
                 >
                   Learn more <span aria-hidden="true">→</span>
