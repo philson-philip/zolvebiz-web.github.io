@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import Script from "next/script";
@@ -11,19 +11,9 @@ import Team from "./Team";
 import Contact from "./Contact";
 import Footer from "./Footer";
 
-export default function Home() {
-  useEffect(() => {
-    window.NeetoWidgetUserIdentity = {};
-    window.addEventListener("load", () =>
-      embedNeetoWidget({
-        apiKey: "RqrHX6Rh3zgcfq4Zs2hexPyA",
-        enableNeetoChangelog: false,
-        enableNeetoChat: true,
-        enableNeetoReplay: false,
-      })
-    );
-  }, []);
+let loaded = false;
 
+export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
@@ -44,7 +34,8 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-      <Script src="https://d13nryxs46eypn.cloudfront.net/neeto-widget.js" />
+
+      {/* <Script strategy="lazyOnload" src="/neetoChat.js" /> */}
 
       <Banner />
       <About />

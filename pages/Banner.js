@@ -114,9 +114,9 @@ export default function Banner() {
                   Partnering for your business growth
                 </h1>
                 <p className="mt-6 text-base leading-8 text-gray-600">
-                  Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
-                  qui lorem cupidatat commodo. Elit sunt amet fugiat veniam
-                  occaecat fugiat aliqua.
+                  Transforming businesses through expert guidance and strategic
+                  solutions. Partner with us to unlock your company's
+                  full potential.
                 </p>
               </div>
             </div>
