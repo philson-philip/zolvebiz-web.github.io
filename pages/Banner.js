@@ -28,7 +28,7 @@ export default function Banner() {
             >
               <a href={`/`} className="-m-1.5 p-1.5">
                 <span className="sr-only">Zolvebiz</span>
-                <Image alt="Zolvebiz" className="h-12 w-auto" src={Logo} />
+                <Image alt="Zolvebiz" className="w-auto h-12" src={Logo} />
               </a>
               <button
                 type="button"
@@ -36,7 +36,7 @@ export default function Banner() {
                 onClick={() => setMobileMenuOpen(true)}
               >
                 <span className="sr-only">Open main menu</span>
-                <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+                <Bars3Icon className="w-6 h-6" aria-hidden="true" />
               </button>
               <div className="hidden lg:ml-12 lg:flex lg:gap-x-14">
                 {navigation.map((item) => (
@@ -59,11 +59,11 @@ export default function Banner() {
           onClose={setMobileMenuOpen}
         >
           <div className="fixed inset-0 z-50" />
-          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full px-6 py-6 overflow-y-auto bg-white sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href={`/`} className="-m-1.5 p-1.5">
                 <span className="sr-only">Zolvebiz</span>
-                <Image alt="Zolvebiz" className="h-12 w-auto" src={Logo} />
+                <Image alt="Zolvebiz" className="w-auto h-12" src={Logo} />
               </a>
               <button
                 type="button"
@@ -71,17 +71,17 @@ export default function Banner() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span className="sr-only">Close menu</span>
-                <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+                <XMarkIcon className="w-6 h-6" aria-hidden="true" />
               </button>
             </div>
-            <div className="mt-6 flow-root">
+            <div className="flow-root mt-6">
               <div className="-my-6 divide-y divide-gray-500/10">
-                <div className="space-y-2 py-6">
+                <div className="py-6 space-y-2">
                   {navigation.map((item) => (
                     <a
                       key={item.name}
                       href={item.href}
-                      className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      className="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50"
                     >
                       {item.name}
                     </a>
@@ -97,7 +97,7 @@ export default function Banner() {
         <div className="mx-auto max-w-7xl">
           <div className="relative z-10 pt-14 lg:w-full lg:max-w-2xl">
             <svg
-              className="absolute inset-y-0 right-8 hidden h-full w-80 translate-x-1/2 transform fill-white lg:block"
+              className="absolute inset-y-0 hidden h-full transform translate-x-1/2 right-8 w-80 fill-white lg:block"
               viewBox="0 0 100 100"
               preserveAspectRatio="none"
               aria-hidden="true"
@@ -105,9 +105,9 @@ export default function Banner() {
               <polygon points="0,0 90,0 50,100 0,100" />
             </svg>
 
-            <div className="relative py-20 px-6 sm:py-40 lg:py-56 lg:px-8 lg:pr-0">
-              <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
-                <h1 className="zolvebiz-logo-font text-4xl font-bold tracking-wide text-gray-900 sm:text-5xl uppercase mb-2 sm:mb-4">
+            <div className="relative px-6 py-20 sm:py-40 lg:py-56 lg:px-8 lg:pr-0">
+              <div className="max-w-2xl mx-auto lg:mx-0 lg:max-w-xl">
+                <h1 className="mb-2 text-4xl font-bold tracking-wide text-gray-900 uppercase zolvebiz-logo-font sm:text-5xl sm:mb-4">
                   Zolvebiz
                 </h1>
                 <h1 className="text-3xl font-bold tracking-wide text-gray-800 sm:text-5xl">
@@ -115,7 +115,7 @@ export default function Banner() {
                 </h1>
                 <p className="mt-6 text-base leading-8 text-gray-600">
                   Transforming businesses through expert guidance and strategic
-                  solutions. Partner with us to unlock your company's
+                  solutions. Partner with us to unlock your company&apos;s
                   full potential.
                 </p>
               </div>
