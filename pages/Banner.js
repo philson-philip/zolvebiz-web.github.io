@@ -17,6 +17,19 @@ const navigation = [
 export default function Banner() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  const handleScroll = (e) => {
+    // first prevent the default behavior
+    e.preventDefault();
+    // get the href and remove everything before the hash (#)
+    const href = e.currentTarget.href;
+    const targetId = href.replace(/.*\#/, "");
+    // get the element by id and use scrollIntoView
+    const elem = document.getElementById(targetId);
+    elem?.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="bg-white">
       <header className="absolute inset-x-0 top-0 z-50">
@@ -43,6 +56,7 @@ export default function Banner() {
                   <a
                     key={item.name}
                     href={item.href}
+                    onClick={handleScroll}
                     className="text-sm font-semibold leading-6 text-gray-900"
                   >
                     {item.name}
@@ -81,6 +95,7 @@ export default function Banner() {
                     <a
                       key={item.name}
                       href={item.href}
+                      onClick={handleScroll}
                       className="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50"
                     >
                       {item.name}

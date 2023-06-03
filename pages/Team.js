@@ -37,9 +37,9 @@ const people = [
 
 export default function Example() {
   return (
-    <div className="bg-white pt-16 pb-24" id="team">
-      <div className="mx-auto max-w-7xl px-6 text-center lg:px-8">
-        <div className="mx-auto max-w-4xl">
+    <div className="pt-16 pb-24 bg-white" id="team">
+      <div className="px-6 mx-auto text-center max-w-7xl lg:px-8">
+        <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Our Team
           </h2>
@@ -53,12 +53,12 @@ export default function Example() {
         </div>
         <ul
           role="list"
-          className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-4"
+          className="grid max-w-2xl grid-cols-1 mx-auto mt-20 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-4"
         >
           {people.map((person) => (
             <li key={person.name}>
               <Image
-                className="mx-auto h-56 w-56 rounded-full"
+                className="w-56 h-56 mx-auto rounded-full"
                 src={person.imageUrl}
                 alt={person.name}
               />

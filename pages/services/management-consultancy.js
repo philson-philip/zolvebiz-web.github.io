@@ -3,6 +3,8 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Logo from "../../public/images/logo.png";
+import ManagementServicesImg from "../../public/images/management.svg";
+import TaxImg from "../../public/images/tax.svg";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -60,12 +62,12 @@ export default function Example() {
       {/* Header */}
       <header className="absolute inset-x-0 top-0 z-50">
         <nav
-          className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 lg:justify-start"
+          className="flex items-center justify-between p-6 mx-auto max-w-7xl lg:px-8 lg:justify-start"
           aria-label="Global"
         >
           <a href={`/`} className="-m-1.5 p-1.5">
             <span className="sr-only">Zolvebiz</span>
-            <Image alt="Zolvebiz" className="h-12 w-auto" src={Logo} />
+            <Image alt="Zolvebiz" className="w-auto h-12" src={Logo} />
           </a>
           <div className="flex lg:hidden">
             <button
@@ -74,10 +76,10 @@ export default function Example() {
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className="sr-only">Open main menu</span>
-              <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+              <Bars3Icon className="w-6 h-6" aria-hidden="true" />
             </button>
           </div>
-          <div className="lg:ml-12 lg:flex lg:gap-x-14 hidden">
+          <div className="hidden lg:ml-12 lg:flex lg:gap-x-14">
             {navigation.map((item) => (
               <a
                 key={item.name}
@@ -96,11 +98,11 @@ export default function Example() {
           onClose={setMobileMenuOpen}
         >
           <div className="fixed inset-0 z-50" />
-          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full px-6 py-6 overflow-y-auto bg-white sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href={`/`} className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
-                <Image alt="Zolvebiz" className="h-12 w-auto" src={Logo} />
+                <Image alt="Zolvebiz" className="w-auto h-12" src={Logo} />
               </a>
               <button
                 type="button"
@@ -108,17 +110,17 @@ export default function Example() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span className="sr-only">Close menu</span>
-                <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+                <XMarkIcon className="w-6 h-6" aria-hidden="true" />
               </button>
             </div>
-            <div className="mt-6 flow-root">
+            <div className="flow-root mt-6">
               <div className="-my-6 divide-y divide-gray-500/10">
-                <div className="space-y-2 py-6">
+                <div className="py-6 space-y-2">
                   {navigation.map((item) => (
                     <a
                       key={item.name}
                       href={item.href}
-                      className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      className="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50"
                     >
                       {item.name}
                     </a>
@@ -143,8 +145,8 @@ export default function Example() {
         </div> */}
 
         {/* Values section */}
-        <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
-          <div className="mx-auto max-w-3xl lg:mx-0">
+        <div className="px-6 mx-auto mt-32 max-w-7xl sm:mt-40 lg:px-8">
+          <div className="max-w-3xl mx-auto lg:mx-0">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               Management Consultancy
             </h2>
@@ -157,167 +159,136 @@ export default function Example() {
               goals.
             </p>
           </div>
-          <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 lg:mx-0 lg:max-w-none">
-            <div className="flex flex-col">
-              <dt className="font-bold text-gray-900 text-xl">
-                Management Accounting Services
-              </dt>
-              <dd className="mt-1 text-gray-600">
-                It’s crucial for any type of business to properly understand
-                what’s happening to it on a daily basis. Every entity should
-                have the right set of accounting tools to review how their
-                business operates. This helps to a great extent in forming
-                timely decisions, adopting selective techniques and planning for
-                the future. However, it is also necessary to provide the right
-                quantity of information at the right time.
-                <br />
-                <br />
-                With our management accounting and MIS-Reports, you will be able
-                to better understand how the business is responding to the
-                environment at large and how well on track the business with the
-                present goals that you have for the year. From budget
-                preparation to variance analysis we provide a wide range of
-                management reports. You will be able to understand and better
-                run your business with a periodic management report.
-                <br />
-                <br />
-                What included in our Management Accounting Service package
-                <ul className="list-disc ml-4">
-                  <li>Customized dashboard</li>
-                  <li>Performance report</li>
-                  <li>Ratio analysis</li>
-                  <li>Budgeted reports & estimated projections</li>
-                  <li>Cost Managerial reports</li>
-                  <li>Aging reports</li>
-                  <li>Performance analysis</li>
-                </ul>
-              </dd>
+          <div className="flex flex-col space-y-8 mt-14">
+            <div className="flex flex-col items-center justify-between w-full mx-auto max-w-7xl sm:flex-row gap-x-10">
+              <div className="w-full sm:w-1/2">
+                <h3 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">
+                  Business Project Report
+                </h3>
+                <p className="mt-3 text-base font-light leading-relaxed text-gray-600">
+                  ZOLVEBIZ provides business strategy and planning services,
+                  including project reporting and analysis, to help clients
+                  manage their projects and stakeholders. Our reports allow
+                  clients to monitor and communicate project scope, time,
+                  budget, and progress effectively. Our services include
+                  detailed project reports, business process design, and
+                  redesign to achieve business goals.
+                </p>
+              </div>
+              <div className="w-full mt-6 sm:w-1/2">
+                <Image
+                  className="w-4/5 mx-auto"
+                  src={ManagementServicesImg}
+                  alt="Management Services"
+                />
+              </div>
             </div>
 
-            <div className="flex flex-col">
-              <dt className="font-bold text-gray-900 text-xl">
-                Franchise Business Strategy Planning
-              </dt>
-              <dd className="mt-1 text-gray-600">
-                Franchise business strategy planning involves the development of
-                a comprehensive plan that outlines the key steps required to
-                establish, operate, and grow a franchise business. Franchise
-                oriented business expansion is a widely accepted business growth
-                strategy especially in domains like retail, distributed
-                manufacturing, FMCG and food and beverage sectors.
-                <br />
-                <br />
-                ZOLVEBIZ assist the client to find out the right franchise
-                models, operation dynamics, franchise partner selection etc
-                which are key strategic elements which need clarity and
-                insight-based intervention. The right models, operation
-                dynamics, franchise partner selection etc are key strategic
-                elements which need clarity and insight-based intervention. We
-                also support in developing operational franchise contracts,
-                process, policies, guidelines and standard operating procedures
-                which define Franchise owner and franchisee terms of reference
-                to ensure smooth operations and sustainable business growth.
-                <br />
-                <br />
-                ZOLVEBIZ’s franchise business strategy planning includes:
-                <ul className="list-disc ml-4">
-                  <li>Conducting SWOT analysis</li>
-                  <li>Developing mission statement</li>
-                  <li>Establishing long term goals</li>
-                  <li>Creating marketing plan</li>
-                  <li>Establishing financial goals</li>
-                  <li>Developing operational plans</li>
-                  <li>Review and update the strategy planning</li>
-                </ul>
-              </dd>
+            <div className="flex flex-col items-center justify-between w-full mx-auto max-w-7xl sm:flex-row-reverse gap-x-10">
+              <div className="w-full sm:w-1/2">
+                <h3 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">
+                  Business Valuation
+                </h3>
+                <p className="mt-3 text-base font-light leading-relaxed text-gray-600">
+                  ZOLVEBIZ offers business valuation services to determine a
+                  company&apos;s economic worth in various situations. Our team
+                  of experts conducts a thorough examination of financial
+                  statements, market trends, and other relevant factors to
+                  provide a comprehensive evaluation. ZOLVEBIZ’s process helps
+                  our clients to make informed decisions about their future,
+                  including mergers, acquisitions, partnerships, taxes, estates,
+                  and legal proceedings.
+                </p>
+              </div>
+              <div className="w-full mt-6 sm:w-1/2">
+                <Image
+                  className="w-4/5 mx-auto"
+                  src={TaxImg}
+                  alt="Management Services"
+                />
+              </div>
             </div>
 
-            <div className="flex flex-col">
-              <dt className="font-bold text-gray-900 text-xl">
-                Business Project Report
-              </dt>
-              <dd className="mt-1 text-gray-600">
-                ZOLVEBIZ’s Business Strategy and Planning Services helps an
-                organization to presents an overall picture of a proposed
-                business which helps them to ascertain the prospects and future
-                of business venture. Our business project reporting enables our
-                clients to stay on top of their projects and manage others&apos;
-                expectations and it also allow our clients to consistently
-                monitor and communicate their project scope, time, budget, and
-                progress at any time to anyone who needs to know.
-                <br />
-                <br />
-                ZOLVEBIZ’s Business Project Report includes:
-                <ul className="list-disc ml-4">
-                  <li>
-                    <b>Detailed Project Report:</b> Our detailed project report
-                    is a comprehensive document that provides an in-depth
-                    analysis of a proposed business project. The report is
-                    typically prepared by our team of experts and is intended to
-                    provide a detailed assessment of the project&apos;s
-                    feasibility, scope, timeline, budget, and potential risks
-                    and challenges.
-                  </li>
-                  <li>
-                    <b>Business Process Design & Redesign:</b> Business process
-                    design and redesign involve a number of steps, including
-                    process mapping, identifying process inputs and outputs,
-                    evaluating performance metrics, and testing the new process.
-                    Our successful implementation of a new or redesigned process
-                    can lead to increased productivity, reduced costs, and
-                    improved customer satisfaction.
-                  </li>
-                </ul>
-              </dd>
+            <div className="flex flex-col items-center justify-between w-full mx-auto max-w-7xl sm:flex-row gap-x-10">
+              <div className="w-full sm:w-1/2">
+                <h3 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">
+                  Franchise Business Strategy
+                </h3>
+                <p className="mt-3 text-base font-light leading-relaxed text-gray-600">
+                  ZOLVEBIZ helps clients with franchise business strategy
+                  planning, from finding the right franchise model to developing
+                  operational plans and contracts. Our approach includes SWOT
+                  analysis, mission statement and goal-setting, marketing and
+                  financial plans, and regular review and updates. Our goal is
+                  to ensure long-term success through a comprehensive plan
+                  guided by ZOLVEBIZ&apos;s expert team.
+                </p>
+              </div>
+              <div className="w-full mt-6 sm:w-1/2">
+                <Image
+                  className="w-4/5 mx-auto"
+                  src={ManagementServicesImg}
+                  alt="Management Services"
+                />
+              </div>
             </div>
 
-            <div className="flex flex-col">
-              <dt className="font-bold text-gray-900 text-xl">Virtual CFO</dt>
-              <dd className="mt-1 text-gray-600">
-                ZOLVEBIZ, with our team of experts provide Virtual CFO Services
-                to businesses at an affordable cost and it also helps business
-                owners to focus on their business instead of tax and regulatory
-                compliances.
-                <br />
-                <br />
-                ZOLVEBIZ’s virtual CFO services cover the following areas:
-                <ul className="list-disc ml-4">
-                  <li>
-                    <b>Financial reporting:</b> We help our clients to prepare
-                    and analyse financial statements, including income
-                    statements, balance sheets, and cash flow statements.
-                  </li>
-                  <li>
-                    <b>Budgeting and forecasting:</b> We assist in developing
-                    budgets and forecasts to help our clients to plan for future
-                    growth and anticipate financial challenges.
-                  </li>
-                  <li>
-                    <b>Cash flow management:</b> We help our clients to manage
-                    their cash flow by forecasting cash inflows and outflows and
-                    developing strategies to improve cash flow.
-                  </li>
-                  <li>
-                    <b>Strategic planning:</b> We assist our clients to develop
-                    long-term financial strategies to achieve their goals, such
-                    as expanding into new markets, launching new products, or
-                    raising capital.
-                  </li>
-                  <li>
-                    <b>Risk management:</b> We help our clients to identify and
-                    manage financial risks, such as currency fluctuations,
-                    interest rate changes, and credit risks.
-                  </li>
-                </ul>
-              </dd>
+            <div className="flex flex-col items-center justify-between w-full mx-auto max-w-7xl sm:flex-row-reverse gap-x-10">
+              <div className="w-full sm:w-1/2">
+                <h3 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">
+                  Management Accounting Services
+                </h3>
+                <p className="mt-3 text-base font-light leading-relaxed text-gray-600">
+                  ZOLVEBIZ offers customized management accounting and
+                  MIS-reporting services, including performance reports,
+                  budgeted reports, and ratio analysis. Our services provide
+                  businesses with valuable information to understand their
+                  operations, make timely decisions, and plan for the future.
+                  ZOLVEBIZ&apos;s goal is to provide the right information at
+                  the right time, helping businesses achieve their objectives
+                  and stay on track.
+                </p>
+              </div>
+              <div className="w-full mt-6 sm:w-1/2">
+                <Image
+                  className="w-4/5 mx-auto"
+                  src={TaxImg}
+                  alt="Management Services"
+                />
+              </div>
             </div>
-          </dl>
+
+            <div className="flex flex-col items-center justify-between w-full mx-auto max-w-7xl sm:flex-row gap-x-10">
+              <div className="w-full sm:w-1/2">
+                <h3 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">
+                  Virtual CFO
+                </h3>
+                <p className="mt-3 text-base font-light leading-relaxed text-gray-600">
+                  ZOLVEBIZ&apos;s virtual CFO services support businesses by
+                  managing financial reporting, budgeting and forecasting, cash
+                  flow management, strategic planning, risk management, and tax
+                  planning and compliance. Our team assists clients in preparing
+                  financial statements, developing budgets and forecasts, and
+                  managing cash flow. ZOLVEBIZ helps our clients to achieve
+                  long-term financial goals by identifying and managing risks
+                  and assisting with tax planning and compliance.
+                </p>
+              </div>
+              <div className="w-full mt-6 sm:w-1/2">
+                <Image
+                  className="w-4/5 mx-auto"
+                  src={ManagementServicesImg}
+                  alt="Management Services"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </main>
 
       {/* Footer */}
-      <footer className="mx-auto mt-16 max-w-7xl overflow-hidden px-6 pb-20 sm:mt-24 sm:pb-24 lg:px-8">
-        <div className="mt-10 flex justify-center space-x-10">
+      <footer className="px-6 pb-20 mx-auto mt-16 overflow-hidden max-w-7xl sm:mt-24 sm:pb-24 lg:px-8">
+        <div className="flex justify-center mt-10 space-x-10">
           {footerNavigation.social.map((item) => (
             <a
               key={item.name}
@@ -325,11 +296,11 @@ export default function Example() {
               className="text-gray-400 hover:text-gray-500"
             >
               <span className="sr-only">{item.name}</span>
-              <item.icon className="h-6 w-6" aria-hidden="true" />
+              <item.icon className="w-6 h-6" aria-hidden="true" />
             </a>
           ))}
         </div>
-        <p className="mt-10 text-center text-xs leading-5 text-gray-500">
+        <p className="mt-10 text-xs leading-5 text-center text-gray-500">
           &copy; 2023 Zolvebiz, Inc. All rights reserved.
         </p>
       </footer>

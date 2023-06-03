@@ -3,6 +3,8 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Logo from "../../public/images/logo.png";
+import ManagementServicesImg from "../../public/images/management.svg";
+import TaxImg from "../../public/images/tax.svg";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -60,12 +62,12 @@ export default function Example() {
       {/* Header */}
       <header className="absolute inset-x-0 top-0 z-50">
         <nav
-          className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 lg:justify-start"
+          className="flex items-center justify-between p-6 mx-auto max-w-7xl lg:px-8 lg:justify-start"
           aria-label="Global"
         >
           <a href={`/`} className="-m-1.5 p-1.5">
             <span className="sr-only">Zolvebiz</span>
-            <Image alt="Zolvebiz" className="h-12 w-auto" src={Logo} />
+            <Image alt="Zolvebiz" className="w-auto h-12" src={Logo} />
           </a>
           <div className="flex lg:hidden">
             <button
@@ -74,10 +76,10 @@ export default function Example() {
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className="sr-only">Open main menu</span>
-              <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+              <Bars3Icon className="w-6 h-6" aria-hidden="true" />
             </button>
           </div>
-          <div className="lg:ml-12 lg:flex lg:gap-x-14 hidden">
+          <div className="hidden lg:ml-12 lg:flex lg:gap-x-14">
             {navigation.map((item) => (
               <a
                 key={item.name}
@@ -96,11 +98,11 @@ export default function Example() {
           onClose={setMobileMenuOpen}
         >
           <div className="fixed inset-0 z-50" />
-          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full px-6 py-6 overflow-y-auto bg-white sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href={`/`} className="-m-1.5 p-1.5">
                 <span className="sr-only">Zolvebiz</span>
-                <Image alt="Zolvebiz" className="h-12 w-auto" src={Logo} />
+                <Image alt="Zolvebiz" className="w-auto h-12" src={Logo} />
               </a>
               <button
                 type="button"
@@ -108,17 +110,17 @@ export default function Example() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span className="sr-only">Close menu</span>
-                <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+                <XMarkIcon className="w-6 h-6" aria-hidden="true" />
               </button>
             </div>
-            <div className="mt-6 flow-root">
+            <div className="flow-root mt-6">
               <div className="-my-6 divide-y divide-gray-500/10">
-                <div className="space-y-2 py-6">
+                <div className="py-6 space-y-2">
                   {navigation.map((item) => (
                     <a
                       key={item.name}
                       href={item.href}
-                      className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      className="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50"
                     >
                       {item.name}
                     </a>
@@ -143,8 +145,8 @@ export default function Example() {
         </div> */}
 
         {/* Values section */}
-        <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
-          <div className="mx-auto max-w-3xl lg:mx-0">
+        <div className="px-6 mx-auto mt-32 max-w-7xl sm:mt-40 lg:px-8">
+          <div className="max-w-3xl mx-auto lg:mx-0">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               Financial & Accounting
             </h2>
@@ -156,244 +158,142 @@ export default function Example() {
               relevant regulations.
             </p>
           </div>
-          <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 lg:mx-0 lg:max-w-none">
-            <div className="flex flex-col">
-              <dt className="font-bold text-gray-900 text-xl">
-                Internal Audit Services
-              </dt>
-              <dd className="mt-1 text-gray-600">
-                Internal audit is an independent, objective assurance and
-                consulting activity designed to add value and improve an
-                organization&apos;s operations. Our primary goal as an internal
-                audit is to help our clients achieve its objectives by bringing
-                a systematic, disciplined approach to evaluating and improving
-                the effectiveness of its risk management, control, and
-                governance processes.
-                <br />
-                <br />
-                ZOLVEBIZ&apos;s internal audit activities include reviewing
-                financial statements, assessing the effectiveness of internal
-                controls, evaluating compliance with laws and regulations,
-                identifying areas of potential risk, and making recommendations
-                for improvement. We provide consulting services to help our
-                clients to improve processes, reduce costs, and increase
-                efficiency.
-                <br />
-                <br />
-                The internal audit function is an essential component of a
-                company&apos;s governance structure, and its role is critical in
-                providing assurance to stakeholders that an organization&apos;s
-                operations are managed effectively and efficiently.
-                <br />
-                <br />
-                ZOLVEBIZ is having a team of professionals who can handle the
-                risk advisory, corporate advisory services and regulatory
-                compliance business line. At ZOLVEBIZ, we believe in working
-                closely with our clients but maintaining the independent lens so
-                that we can bring forth the befitting solutions to business
-                problems.
-              </dd>
+          <div className="flex flex-col space-y-8 mt-14">
+            <div className="flex flex-col items-center justify-between w-full mx-auto max-w-7xl sm:flex-row gap-x-10">
+              <div className="w-full sm:w-1/2">
+                <h3 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">
+                  Accounting Advisory Services
+                </h3>
+                <p className="mt-3 text-base font-light leading-relaxed text-gray-600">
+                  ZOLVEBIZ offers accounting advisory services to improve
+                  financial management capabilities and navigate accounting
+                  regulations. Our services include financial reporting,
+                  accounting standard implementation, transaction advisory
+                  services, internal controls and risk management, forensic
+                  accounting, and sustainability reporting. Our services provide
+                  expert advice, guidance, and support, ensuring optimized,
+                  accurate, and compliant financial and accounting processes.
+                  Our team offers customized solutions for businesses,
+                  governments, and other organizations.
+                </p>
+              </div>
+              <div className="w-full mt-6 sm:w-1/2">
+                <Image
+                  className="w-4/5 mx-auto"
+                  src={ManagementServicesImg}
+                  alt="Management Services"
+                />
+              </div>
             </div>
 
-            <div className="flex flex-col">
-              <dt className="font-bold text-gray-900 text-xl">
-                Accounting Advisory Services
-              </dt>
-              <dd className="mt-1 text-gray-600">
-                ZOLVEBIZ’s accounting advisory services include professional
-                services provided to assist organizations with a range of
-                financial and accounting issues. Our services are typically
-                offered to businesses, governments, and other organizations
-                seeking to enhance their financial management capabilities,
-                improve their internal control systems, or navigate complex
-                accounting regulations.
-                <br />
-                <br />
-                Our accounting advisory services include:
-                <ul className="list-disc ml-4">
-                  <li>
-                    Financial Reporting and Accounting Standard Implementation -
-                    Assisting clients in implementation of new accounting
-                    standards, such as IFRS or US GAAP and ensuring compliance
-                    with relevant reporting requirements.
-                  </li>
-                  <li>
-                    Transaction Advisory Services – Providing due diligence,
-                    valuation and financial analysis for mergers, acquisitions
-                    and divestitures.
-                  </li>
-                  <li>
-                    InternalControlandRiskManagement-Evaluatingandimprovinginternal
-                    controls and risk management systems to minimize financial
-                    risk and fraud.
-                  </li>
-                  <li>
-                    Forensic Accounting – Investigating and detecting fraudulent
-                    activities, embezzlement and financial irregularities.
-                  </li>
-                  <li>
-                    Sustainability Reporting and Assurance – Assisting clients
-                    with sustainability reporting including greenhouse gas
-                    emissions and environmental, social, and governance (ESG)
-                    performance and providing assurance on the accuracy of
-                    sustainable disclosures.
-                  </li>
-                </ul>
-              </dd>
+            <div className="flex flex-col items-center justify-between w-full mx-auto max-w-7xl sm:flex-row-reverse gap-x-10">
+              <div className="w-full sm:w-1/2">
+                <h3 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">
+                  Audit Support Services
+                </h3>
+                <p className="mt-3 text-base font-light leading-relaxed text-gray-600">
+                  ZOLVEBIZ offers audit support services to help individuals and
+                  businesses during audits. Our team assists clients with
+                  financial record review, documentation preparation, inquiry
+                  response, and record organization to minimize internal
+                  disruption. We also review auditor findings, provide
+                  recommendations, and implement corrective actions. Our goal is
+                  to ensure smooth audit navigation and full preparedness to
+                  address inquiries.
+                </p>
+              </div>
+              <div className="w-full mt-6 sm:w-1/2">
+                <Image
+                  className="w-4/5 mx-auto"
+                  src={TaxImg}
+                  alt="Management Services"
+                />
+              </div>
             </div>
 
-            <div className="flex flex-col">
-              <dt className="font-bold text-gray-900 text-xl">
-                Bookkeeping Services
-              </dt>
-              <dd className="mt-1 text-gray-600">
-                Dedicated team of ZOLVEBIZ are trained and well experienced in
-                preparing detailed financials from minimal documents. Our team
-                is capable of meeting your business bookkeeping needs. We will
-                ensure that all the transactions occurring in your business are
-                properly and quickly captured in your preferred accounting
-                software and that you are continuously kept up-to-date about the
-                position of your business.
-                <br />
-                <br />
-                We always recommend using online accounting software like Xero,
-                QBO, Zoho Books so that you have access to your company records
-                whenever and wherever you want and some of these applications
-                also provide mobile app support. Even if you don’t use any of
-                the mentioned software, our team will support you by making the
-                best of the application you are currently using.
-                <br />
-                <br />
-                What included in our bookkeeping & accounting service packages
-                <ul className="list-disc ml-4">
-                  <li>Management Accounts</li>
-                  <li>Financial Statements</li>
-                  <li>InventoryManagement</li>
-                  <li>PayrollServices</li>
-                  <li>Tax Return Preparation</li>
-                  <li>Cash Flow Management</li>
-                  <li>Accounts Payable</li>
-                  <li>Accounts Receivables</li>
-                  <li>Business Activity Statement</li>
-                </ul>
-              </dd>
+            <div className="flex flex-col items-center justify-between w-full mx-auto max-w-7xl sm:flex-row gap-x-10">
+              <div className="w-full sm:w-1/2">
+                <h3 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">
+                  Bookkeeping Services
+                </h3>
+                <p className="mt-3 text-base font-light leading-relaxed text-gray-600">
+                  ZOLVEBIZ provides bookkeeping and accounting services to
+                  capture all business transactions and ensure accurate
+                  financial records. Our dedicated team is trained to prepare
+                  detailed financials from minimal documents, using online
+                  accounting software like Xero, QBO, and ZohoBooks. Our service
+                  packages include management accounts, monthly financial
+                  performance analysis, ratio analysis, inventory management,
+                  tax return preparation, cash flow management, accounts
+                  payable/receivable, and business activity statement.
+                </p>
+              </div>
+              <div className="w-full mt-6 sm:w-1/2">
+                <Image
+                  className="w-4/5 mx-auto"
+                  src={ManagementServicesImg}
+                  alt="Management Services"
+                />
+              </div>
             </div>
 
-            <div className="flex flex-col">
-              <dt className="font-bold text-gray-900 text-xl">
-                Payroll Management
-              </dt>
-              <dd className="mt-1 text-gray-600">
-                Outsourcing payroll allows employers and organizations to focus
-                on their core business activities and frees up the business
-                owner, HR department or accounting team. Irrespective of the
-                number of your employees, attending to payroll need a
-                significant time and effort.
-                <br />
-                <br />
-                Efficient management of payroll has become a success factor for
-                every organization in order to achieve its organizational goals
-                and productivity. An effective and expert outsourced payroll
-                management team can and helps a business organization to
-                simplify payroll, boost productivity, and improve administration
-                and ultimately cost saving and increased profitability.
-                <br />
-                <br />
-                So in this regard, ZOLVEBIZ team will manage your entire payroll
-                process to make it more secure, timely and make sure that you
-                meet your responsibilities on time.
-                <br />
-                <br />
-                Our services cover the following:
-                <ul className="list-disc ml-4">
-                  <li>Updating and analyzing time records</li>
-                  <li>Calculating payments</li>
-                  <li>TDS compliances</li>
-                  <li>Reconciliation payroll with bank and actual payments</li>
-                </ul>
-              </dd>
+            <div className="flex flex-col items-center justify-between w-full mx-auto max-w-7xl sm:flex-row-reverse gap-x-10">
+              <div className="w-full sm:w-1/2">
+                <h3 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">
+                  Internal Audit
+                </h3>
+                <p className="mt-3 text-base font-light leading-relaxed text-gray-600">
+                  ZOLVEBIZ offers internal audit services to enhance the
+                  effectiveness of organizations by providing objective
+                  assurance and consulting activities. We review financial
+                  statements, assess internal controls, evaluate compliance with
+                  laws and regulations, and identify potential areas of risk. We
+                  also offer consulting services to improve processes, reduce
+                  costs, and increase efficiency. ZOLVEBIZ provides risk
+                  advisory, corporate advisory and regulatory compliance
+                  services to support clients&apos; needs.
+                </p>
+              </div>
+              <div className="w-full mt-6 sm:w-1/2">
+                <Image
+                  className="w-4/5 mx-auto"
+                  src={TaxImg}
+                  alt="Management Services"
+                />
+              </div>
             </div>
 
-            <div className="flex flex-col">
-              <dt className="font-bold text-gray-900 text-xl">
-                Audit Support Services
-              </dt>
-              <dd className="mt-1 text-gray-600">
-                Audit support services refer to services provided to assist
-                individuals or businesses during an audit. ZOLVEBIZ’s audit
-                support services are designed to help our clients to prepare for
-                an audit, as well as respond to inquiries and requests from the
-                auditor.
-                <br />
-                <br />
-                ZOLVEBIZ’s team has relevant experience in handling the audit of
-                large organizations. Our team can assist our client in
-                completing audits in a time bound manner with no pain to the
-                internal finance and account team.
-                <br />
-                <br />
-                Our audit support services include:
-                <ul className="list-disc ml-4">
-                  <li>
-                    Reviewing financial records and preparing documentation that
-                    the auditor may request during the audit.
-                  </li>
-                  <li>
-                    Providing information and responding to inquiries from the
-                    auditor in a timely manner.
-                  </li>
-                  <li>
-                    Organizing and managing the financial records and documents
-                    required for the audit.
-                  </li>
-                  <li>
-                    Reviewing the auditor&apos;s findings and recommendations
-                    and developing a plan to address any issues identified.
-                  </li>
-                  <li>
-                    Addressing any recommendations made by the auditor and
-                    implementing corrective actions to improve the financial
-                    controls and compliance of the organization
-                  </li>
-                </ul>
-              </dd>
+            <div className="flex flex-col items-center justify-between w-full mx-auto max-w-7xl sm:flex-row gap-x-10">
+              <div className="w-full sm:w-1/2">
+                <h3 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">
+                  Payroll Management
+                </h3>
+                <p className="mt-3 ml-4 text-base font-light leading-relaxed text-gray-600">
+                  ZOLVEBIZ&apos;s outsourced payroll services provide efficient
+                  and secure management of payroll processes, allowing
+                  businesses to focus on their core activities. Our expert team
+                  handles payroll calculations, TDS compliance, and
+                  reconciliation with actual payments, ensuring timely and
+                  accurate processing. Outsourcing payroll management ultimately
+                  leads to improved administration, cost savings, and increased
+                  profitability for businesses.
+                </p>
+              </div>
+              <div className="w-full mt-6 sm:w-1/2">
+                <Image
+                  className="w-4/5 mx-auto"
+                  src={ManagementServicesImg}
+                  alt="Management Services"
+                />
+              </div>
             </div>
-
-            <div className="flex flex-col">
-              <dt className="font-bold text-gray-900 text-xl">
-                Business Valuation
-              </dt>
-              <dd className="mt-1 text-gray-600">
-                Business Valuation process typically involves an examination of
-                financial statements, company history, market trends, and other
-                relevant factors to determine the economic value of business or
-                company. ZOLVEBIZ is having a team of professional appraisers,
-                analysts and registered valuer to determine the value of the
-                business, as it provides a means to estimate the worth of the
-                company, which is essential in a variety of situations,
-                including mergers and acquisitions, partnership disputes, estate
-                planning, taxation, and legal proceedings.
-                <br />
-                <br />
-                ZOLVEBIZ’s valuation professionals may also consider other
-                factors such as market trends, financial statements, management
-                capability, intellectual property, and competition when
-                determining the value of a business. In addition, the valuation
-                process may involve adjusting financial statements to reflect
-                the fair value of assets and liabilities. Our business valuation
-                process is helpful for those companies looking to make strategic
-                decisions about their future, as it provides a clear
-                understanding of the worth of the business and its potential for
-                growth.
-              </dd>
-            </div>
-          </dl>
+          </div>
         </div>
       </main>
 
       {/* Footer */}
-      <footer className="mx-auto mt-16 max-w-7xl overflow-hidden px-6 pb-20 sm:mt-24 sm:pb-24 lg:px-8">
-        <div className="mt-10 flex justify-center space-x-10">
+      <footer className="px-6 pb-20 mx-auto mt-16 overflow-hidden max-w-7xl sm:mt-24 sm:pb-24 lg:px-8">
+        <div className="flex justify-center mt-10 space-x-10">
           {footerNavigation.social.map((item) => (
             <a
               key={item.name}
@@ -401,11 +301,11 @@ export default function Example() {
               className="text-gray-400 hover:text-gray-500"
             >
               <span className="sr-only">{item.name}</span>
-              <item.icon className="h-6 w-6" aria-hidden="true" />
+              <item.icon className="w-6 h-6" aria-hidden="true" />
             </a>
           ))}
         </div>
-        <p className="mt-10 text-center text-xs leading-5 text-gray-500">
+        <p className="mt-10 text-xs leading-5 text-center text-gray-500">
           &copy; 2023 Zolvebiz, Inc. All rights reserved.
         </p>
       </footer>

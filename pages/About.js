@@ -2,14 +2,14 @@ export default function About() {
   return (
     <div
       id="about"
-      className="relative isolate overflow-hidden bg-white px-6 pt-16 pb-12 sm:py-16 lg:overflow-visible lg:px-0"
+      className="relative px-6 pt-16 pb-12 overflow-hidden bg-white isolate sm:py-16 lg:overflow-visible lg:px-0"
     >
-      <div className="mx-auto flex flex-col gap-y-10 items-center">
+      <div className="flex flex-col items-center mx-auto gap-y-10">
         <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
           About Us
         </h1>
 
-        <div className="max-w-4xl text-base leading-7 text-gray-700 text-center">
+        <div className="max-w-5xl text-base leading-7 text-justify text-gray-700">
           <p>
             Welcome to ZOLVEBIZ, a business consultancy firm dedicated to
             helping businesses of all sizes thrive and succeed. Our team of

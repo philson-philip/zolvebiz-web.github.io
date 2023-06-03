@@ -6,9 +6,9 @@ import Image from "next/image";
 
 export default function Services() {
   return (
-    <div className="bg-white py-12 sm:py-16" id="services">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-4xl lg:text-center">
+    <div className="py-12 bg-white sm:py-16" id="services">
+      <div className="px-6 mx-auto max-w-7xl lg:px-8">
+        <div className="max-w-5xl mx-auto lg:text-center">
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Our Services
           </p>
@@ -21,20 +21,19 @@ export default function Services() {
             obligations and help to take decision for proper investment on time
           </p>
         </div>
-        <div className="flex flex-col mt-14 space-y-8">
-          <div className="flex flex-col sm:flex-row justify-between w-full gap-x-10 items-center max-w-5xl mx-auto">
+        <div className="flex flex-col space-y-8 mt-14">
+          <div className="flex flex-col items-center justify-between w-full max-w-5xl mx-auto sm:flex-row gap-x-10">
             <div className="w-full sm:w-1/2">
-              <h3 className="text-xl font-bold text-gray-900 tracking-tight sm:text-2xl">
+              <h3 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">
                 Management Consultancy
               </h3>
-              <p className="mt-3 text-base font-light leading-relaxed text-gray-600">
-                Management consultancy involves providing expert advice and
-                guidance to businesses and organizations on improving their
-                operations, efficiency, and overall performance. Consultants use
-                their knowledge and experience to identify problems, develop
-                solutions, and implement strategies to help clients achieve
-                their goals.
-              </p>
+              <ul className="mt-3 ml-4 text-base font-light leading-relaxed text-gray-600 list-disc">
+                <li>Business Project Report</li>
+                <li>Business Valuation</li>
+                <li>Franchise Business Strategy</li>
+                <li>Management Accounting Services</li>
+                <li>Virtual CFO</li>
+              </ul>
               <p className="mt-6">
                 <a
                   href={`/services/management-consultancy`}
@@ -44,7 +43,7 @@ export default function Services() {
                 </a>
               </p>
             </div>
-            <div className="mt-6 w-full sm:w-1/2">
+            <div className="w-full mt-6 sm:w-1/2">
               <Image
                 className="w-4/5 mx-auto"
                 src={ManagementServicesImg}
@@ -53,19 +52,17 @@ export default function Services() {
             </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row-reverse justify-between w-full gap-x-10 items-center max-w-5xl mx-auto">
+          <div className="flex flex-col items-center justify-between w-full max-w-5xl mx-auto sm:flex-row-reverse gap-x-10">
             <div className="w-full sm:w-1/2">
-              <h3 className="text-xl font-bold text-gray-900 tracking-tight sm:text-2xl">
+              <h3 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">
                 Tax & Regulation
               </h3>
-              <p className="mt-3 text-base font-light leading-relaxed text-gray-600">
-                Tax & regulation are important factors that affect businesses
-                and individuals, as they determine the amount of taxes to be
-                paid and the rules that must be followed to avoid penalties and
-                legal issues. Consulting services in this area can help navigate
-                the complexities of tax and regulatory compliance, reducing
-                risks and maximizing benefits.
-              </p>
+              <ul className="mt-3 ml-4 text-base font-light leading-relaxed text-gray-600 list-disc">
+                <li>Foreign Exchange and RBI Compliance</li>
+                <li>Income Tax and GST Advisory</li>
+                <li>SEZ Compliance</li>
+                <li>Tax Compliance</li>
+              </ul>
               <p className="mt-6">
                 <a
                   href={`/services/tax-regulation`}
@@ -75,7 +72,7 @@ export default function Services() {
                 </a>
               </p>
             </div>
-            <div className="mt-6 w-full sm:w-1/2">
+            <div className="w-full mt-6 sm:w-1/2">
               <Image
                 className="w-4/5 mx-auto"
                 src={TaxImg}
@@ -84,18 +81,18 @@ export default function Services() {
             </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row justify-between w-full gap-x-10 items-center max-w-5xl mx-auto">
+          <div className="flex flex-col items-center justify-between w-full max-w-5xl mx-auto sm:flex-row gap-x-10">
             <div className="w-full sm:w-1/2">
-              <h3 className="text-xl font-bold text-gray-900 tracking-tight sm:text-2xl">
+              <h3 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">
                 Financial & Accounting
               </h3>
-              <p className="mt-3 text-base font-light leading-relaxed text-gray-600">
-                Financial & accounting services involve the management of
-                financial information, including financial reporting,
-                bookkeeping, and tax preparation. These services are critical to
-                ensuring that businesses maintain accurate financial records and
-                comply with relevant regulations.
-              </p>
+              <ul className="mt-3 ml-4 text-base font-light leading-relaxed text-gray-600 list-disc">
+                <li>Accounting Advisory Services</li>
+                <li>Audit Support Services</li>
+                <li>Bookkeeping Services</li>
+                <li>Internal Audit</li>
+                <li>Payroll Management</li>
+              </ul>
               <p className="mt-6">
                 <a
                   href={`/services/financial-accounting`}
@@ -105,7 +102,7 @@ export default function Services() {
                 </a>
               </p>
             </div>
-            <div className="mt-6 w-full sm:w-1/2">
+            <div className="w-full mt-6 sm:w-1/2">
               <Image
                 className="w-4/5 mx-auto"
                 src={FinanceImg}
@@ -114,18 +111,16 @@ export default function Services() {
             </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row-reverse justify-between w-full gap-x-10 items-center max-w-5xl mx-auto">
+          <div className="flex flex-col items-center justify-between w-full max-w-5xl mx-auto sm:flex-row-reverse gap-x-10">
             <div className="w-full sm:w-1/2">
-              <h3 className="text-xl font-bold text-gray-900 tracking-tight sm:text-2xl">
+              <h3 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">
                 Incorporation & Startup Services
               </h3>
-              <p className="mt-3 text-base font-light leading-relaxed text-gray-600">
-                Incorporation creates a separate legal entity and limits the
-                liability of business owners. Startup services provide
-                assistance to entrepreneurs in launching and growing their
-                businesses, covering everything from planning and branding to
-                marketing and advertising.
-              </p>
+              <ul className="mt-3 ml-4 text-base font-light leading-relaxed text-gray-600 list-disc">
+                <li>Corporate Secretarial Services</li>
+                <li>Incorporation Services</li>
+                <li>Registration Services</li>
+              </ul>
               <p className="mt-6">
                 <a
                   href={`/services/incorporation-startup-services`}
@@ -135,7 +130,7 @@ export default function Services() {
                 </a>
               </p>
             </div>
-            <div className="mt-6 w-full sm:w-1/2">
+            <div className="w-full mt-6 sm:w-1/2">
               <Image
                 className="w-4/5 mx-auto"
                 src={StartupImg}

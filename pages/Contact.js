@@ -1,219 +1,139 @@
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
-import {
-  BuildingOffice2Icon,
-  EnvelopeIcon,
-  PhoneIcon,
-} from "@heroicons/react/24/outline";
+import ContactUsImg from "../public/images/contact-us.avif";
+import LogoImg from "../public/images/logo.png";
+import Image from "next/image";
 
 export default function Contact() {
   return (
-    <div className="relative isolate sm:bg-gray-100 bg-white" id="contact">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
-        <div className="relative px-6 pt-24 pb-20 sm:pt-32 lg:static lg:py-48 lg:px-8">
-          <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
-            <div className="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden bg-gray-100 border-r border-gray-200 lg:w-1/2">
-              <svg
-                className="absolute inset-0 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
-                aria-hidden="true"
+    <>
+      <div className="relative bg-gray-900" id="contact">
+        <div className="relative overflow-hidden bg-indigo-600 h-80 md:absolute md:left-0 md:h-full md:w-1/3 lg:w-1/2">
+          <Image
+            className="object-cover w-full h-full"
+            src={ContactUsImg}
+            alt="Contact Us"
+          />
+          <svg
+            viewBox="0 0 926 676"
+            aria-hidden="true"
+            className="absolute -bottom-24 left-24 w-[57.875rem] transform-gpu blur-[118px]"
+          >
+            <path
+              fill="url(#60c3c621-93e0-4a09-a0e6-4c228a0116d8)"
+              fillOpacity=".4"
+              d="m254.325 516.708-90.89 158.331L0 436.427l254.325 80.281 163.691-285.15c1.048 131.759 36.144 345.144 168.149 144.613C751.171 125.508 707.17-93.823 826.603 41.15c95.546 107.978 104.766 294.048 97.432 373.585L685.481 297.694l16.974 360.474-448.13-141.46Z"
+            />
+            <defs>
+              <linearGradient
+                id="60c3c621-93e0-4a09-a0e6-4c228a0116d8"
+                x1="926.392"
+                x2="-109.635"
+                y1=".176"
+                y2="321.024"
+                gradientUnits="userSpaceOnUse"
               >
-                <defs>
-                  <pattern
-                    id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527"
-                    width={200}
-                    height={200}
-                    x="100%"
-                    y={-1}
-                    patternUnits="userSpaceOnUse"
-                  >
-                    <path d="M130 200V.5M.5 .5H200" fill="none" />
-                  </pattern>
-                </defs>
-                <rect width="100%" height="100%" strokeWidth={0} fill="white" />
-                <svg x="100%" y={-1} className="overflow-visible fill-gray-50">
-                  <path d="M-470.5 0h201v201h-201Z" strokeWidth={0} />
-                </svg>
-                <rect
-                  width="100%"
-                  height="100%"
-                  strokeWidth={0}
-                  fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)"
-                />
-              </svg>
-            </div>
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900">
-              Contact Us
-            </h2>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              Have a question, comment or some feedback for us?
+                <stop stopColor="#776FFF" />
+                <stop offset={1} stopColor="#FF4694" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div className="relative px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8 lg:py-20">
+          <div className="pl-6 pr-6 md:ml-auto md:w-2/3 md:pl-16 lg:w-1/2 lg:pl-24 lg:pr-0 xl:pl-32">
+            <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              We’re here to help
             </p>
-            <dl className="mt-10 space-y-4 text-base leading-7 text-gray-600">
-              <div className="flex gap-x-4">
-                <dt className="flex-none">
-                  <span className="sr-only">Address</span>
-                  <BuildingOffice2Icon
-                    className="h-7 w-6 text-gray-400"
-                    aria-hidden="true"
-                  />
-                </dt>
-                <dd>
-                  KV Nagar, Panampilly Nagar <br /> Ernakulam, Kerala 682036
-                </dd>
+            <p className="mt-6 text-base leading-7 text-gray-300">
+              Contact our CA consulting firm today for expert advice and
+              tailored solutions to optimize your business&apos;s financial
+              success. Reach out now and let us help you thrive.
+            </p>
+            <div className="mt-4">
+              <h3 class="text-lg font-medium text-white">Office Address</h3>
+              <div class="mt-2 text-base font-light text-gray-300 space-y-1">
+                <p>KV Nagar, Panampilly Nagar</p>
+                <p>Ernakulam, Kerala 682036</p>
               </div>
-              <div className="flex gap-x-4">
-                <dt className="flex-none">
-                  <span className="sr-only">Telephone</span>
-                  <PhoneIcon
-                    className="h-7 w-6 text-gray-400"
+            </div>
+            <div className="mt-4">
+              <h3 class="text-lg font-medium text-white">Support</h3>
+              <div class="mt-2 flex">
+                <div class="flex-shrink-0">
+                  <svg
+                    class="h-6 w-6 text-gray-400"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
                     aria-hidden="true"
-                  />
-                </dt>
-                <dd>
-                  <a className="hover:text-gray-900" href="tel:+91 6282800328">
-                    +91 6282800328
-                  </a>
-                  {", "}
-                  <a className="hover:text-gray-900" href="tel:+91 9745380701">
-                    +91 9745380701
-                  </a>
-                </dd>
-              </div>
-              <div className="flex gap-x-4">
-                <dt className="flex-none">
-                  <span className="sr-only">Email</span>
-                  <EnvelopeIcon
-                    className="h-7 w-6 text-gray-400"
-                    aria-hidden="true"
-                  />
-                </dt>
-                <dd>
-                  <a
-                    className="hover:text-gray-900"
-                    href="mailto:info@zolvebiz.com"
                   >
-                    info@zolvebiz.com
-                  </a>
-                </dd>
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="ml-3 text-base font-light text-gray-300">
+                  <p>+91 6282800328</p>
+                </div>
               </div>
-            </dl>
+              <div class="mt-2 flex">
+                <div class="flex-shrink-0">
+                  <svg
+                    class="h-6 w-6 text-gray-400"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="ml-3 text-base font-light text-gray-300">
+                  <p>+91 9745380701</p>
+                </div>
+              </div>
+              <div class="mt-2 flex">
+                <div class="flex-shrink-0">
+                  <svg
+                    class="h-6 w-6 text-gray-400"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="ml-3 text-base font-light text-gray-300">
+                  <p>info@zolvebiz.com</p>
+                </div>
+              </div>
+            </div>
+            <div className="mt-8">
+              <a
+                href="tel:+916282800328"
+                className="inline-flex rounded-md bg-white/10 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              >
+                Hop on a call
+              </a>
+            </div>
           </div>
         </div>
-        <form
-          action="#"
-          method="POST"
-          className="px-6 pb-24 pt-20 sm:pb-32 lg:py-48 lg:px-8"
-        >
-          <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
-            <div className="grid grid-cols-1 gap-y-6 gap-x-8 sm:grid-cols-2">
-              <div>
-                <label
-                  htmlFor="first-name"
-                  className="block text-sm font-semibold leading-6 text-gray-900"
-                >
-                  First name
-                </label>
-                <div className="mt-2.5">
-                  <input
-                    type="text"
-                    name="first-name"
-                    id="first-name"
-                    autoComplete="given-name"
-                    className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  />
-                </div>
-              </div>
-              <div>
-                <label
-                  htmlFor="last-name"
-                  className="block text-sm font-semibold leading-6 text-gray-900"
-                >
-                  Last name
-                </label>
-                <div className="mt-2.5">
-                  <input
-                    type="text"
-                    name="last-name"
-                    id="last-name"
-                    autoComplete="family-name"
-                    className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  />
-                </div>
-              </div>
-              <div className="sm:col-span-2">
-                <label
-                  htmlFor="email"
-                  className="block text-sm font-semibold leading-6 text-gray-900"
-                >
-                  Email
-                </label>
-                <div className="mt-2.5">
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    autoComplete="email"
-                    className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  />
-                </div>
-              </div>
-              <div className="sm:col-span-2">
-                <label
-                  htmlFor="phone-number"
-                  className="block text-sm font-semibold leading-6 text-gray-900"
-                >
-                  Phone number
-                </label>
-                <div className="mt-2.5">
-                  <input
-                    type="tel"
-                    name="phone-number"
-                    id="phone-number"
-                    autoComplete="tel"
-                    className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  />
-                </div>
-              </div>
-              <div className="sm:col-span-2">
-                <label
-                  htmlFor="message"
-                  className="block text-sm font-semibold leading-6 text-gray-900"
-                >
-                  Message
-                </label>
-                <div className="mt-2.5">
-                  <textarea
-                    name="message"
-                    id="message"
-                    rows={4}
-                    className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                    defaultValue={""}
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="mt-8 flex justify-end">
-              <button
-                type="submit"
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              >
-                Send message
-              </button>
-            </div>
-          </div>
-        </form>
       </div>
-    </div>
+    </>
   );
 }

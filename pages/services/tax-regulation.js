@@ -3,6 +3,8 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Logo from "../../public/images/logo.png";
+import ManagementServicesImg from "../../public/images/management.svg";
+import TaxImg from "../../public/images/tax.svg";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -59,12 +61,12 @@ export default function Example() {
       {/* Header */}
       <header className="absolute inset-x-0 top-0 z-50">
         <nav
-          className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 lg:justify-start"
+          className="flex items-center justify-between p-6 mx-auto max-w-7xl lg:px-8 lg:justify-start"
           aria-label="Global"
         >
           <a href={`/`} className="-m-1.5 p-1.5">
             <span className="sr-only">Zolvebiz</span>
-            <Image alt="Zolvebiz" className="h-12 w-auto" src={Logo} />
+            <Image alt="Zolvebiz" className="w-auto h-12" src={Logo} />
           </a>
           <div className="flex lg:hidden">
             <button
@@ -73,10 +75,10 @@ export default function Example() {
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className="sr-only">Open main menu</span>
-              <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+              <Bars3Icon className="w-6 h-6" aria-hidden="true" />
             </button>
           </div>
-          <div className="lg:ml-12 lg:flex lg:gap-x-14 hidden">
+          <div className="hidden lg:ml-12 lg:flex lg:gap-x-14">
             {navigation.map((item) => (
               <a
                 key={item.name}
@@ -95,11 +97,11 @@ export default function Example() {
           onClose={setMobileMenuOpen}
         >
           <div className="fixed inset-0 z-50" />
-          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full px-6 py-6 overflow-y-auto bg-white sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href={`/`} className="-m-1.5 p-1.5">
                 <span className="sr-only">Zolvebiz</span>
-                <Image alt="Zolvebiz" className="h-12 w-auto" src={Logo} />
+                <Image alt="Zolvebiz" className="w-auto h-12" src={Logo} />
               </a>
               <button
                 type="button"
@@ -107,17 +109,17 @@ export default function Example() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span className="sr-only">Close menu</span>
-                <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+                <XMarkIcon className="w-6 h-6" aria-hidden="true" />
               </button>
             </div>
-            <div className="mt-6 flow-root">
+            <div className="flow-root mt-6">
               <div className="-my-6 divide-y divide-gray-500/10">
-                <div className="space-y-2 py-6">
+                <div className="py-6 space-y-2">
                   {navigation.map((item) => (
                     <a
                       key={item.name}
                       href={item.href}
-                      className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      className="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50"
                     >
                       {item.name}
                     </a>
@@ -142,8 +144,8 @@ export default function Example() {
         </div> */}
 
         {/* Values section */}
-        <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
-          <div className="mx-auto max-w-3xl lg:mx-0">
+        <div className="px-6 mx-auto mt-32 max-w-7xl sm:mt-40 lg:px-8">
+          <div className="max-w-3xl mx-auto lg:mx-0">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               Tax & Regulation
             </h2>
@@ -156,205 +158,118 @@ export default function Example() {
               maximizing benefits.
             </p>
           </div>
-          <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 lg:mx-0 lg:max-w-none">
-            <div className="flex flex-col">
-              <dt className="font-bold text-gray-900 text-xl">
-                Tax Compliances
-              </dt>
-              <dd className="mt-1 text-gray-600">
-                Ensuring that your business is in compliance with statutory and
-                regulatory requirements can be a confusing and tiresome task,
-                especially if you don’t have the right resources. Once an entity
-                is registered for tax authorizes, it is mandatory that they meet
-                the periodic deadlines set by the authorities. Having a
-                dedicated team for tax compliance can be quite expensive for
-                start- ups and small businesses. For a large business, the
-                problem could be retaining such well-trained staff.
-                <br />
-                <br />
-                ZOLVEBIZ help our clients to efficiently manage the tax
-                compliances to avoid future penalties for erroneous or
-                non-disclosures in the tax forms.
-                <br />
-                <br />
-                ZOLVEBIZ’s tax compliance services include:
-                <ul className="list-disc ml-4">
-                  <li>
-                    Preparation and review of tax computation, periodic tax
-                    return and comments on tax positions adopted by clients.
-                  </li>
-                  <li>Preparation and review of quarterly e-TDS returns.</li>
-                  <li>
-                    Preparation and review of monthly or quarterly GST returns.
-                  </li>
-                  <li>
-                    Obtaining various tax registrations, such as PAN, TAN, TIN,
-                    GST etc from the tax authorities.
-                  </li>
-                  <li>
-                    Assistance in conducting periodical review of tax
-                    compliances under the Income Tax Law and GST Laws.
-                  </li>
-                  <li>Manage certificates.</li>
-                  <li>
-                    Responding to officials communications on your behalf.
-                  </li>
-                  <li>Any other related compliances matters.</li>
-                </ul>
-              </dd>
+          <div className="flex flex-col space-y-8 mt-14">
+            <div className="flex flex-col items-center justify-between w-full mx-auto max-w-7xl sm:flex-row gap-x-10">
+              <div className="w-full sm:w-1/2">
+                <h3 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">
+                  Foreign Exchange & RBI Compliance
+                </h3>
+                <p className="mt-3 text-base font-light leading-relaxed text-gray-600">
+                  ZOLVEBIZ provides foreign exchange and Reserve Bank of India
+                  (RBI) compliance services to ensure businesses comply with all
+                  regulations and requirements related to international
+                  transactions and foreign investments. We help our clients with
+                  filing forms, obtaining approvals, and reporting foreign
+                  exchange transactions to RBI. We also assist with AML
+                  regulations, reporting suspicious transactions, and adhering
+                  to KYC regulations. Our services include filing FCGPR and
+                  FCTRS forms for foreign investment and transfer of shares,
+                  obtaining approvals, and meeting reporting requirements under
+                  FEMA regulations.
+                </p>
+              </div>
+              <div className="w-full mt-6 sm:w-1/2">
+                <Image
+                  className="w-4/5 mx-auto"
+                  src={ManagementServicesImg}
+                  alt="Management Services"
+                />
+              </div>
             </div>
 
-            <div className="flex flex-col">
-              <dt className="font-bold text-gray-900 text-xl">
-                Income Tax & GST Advisory
-              </dt>
-              <dd className="mt-1 text-gray-600">
-                ZOLVEBIZ team for tax advisory services help corporate and
-                non-corporate clients to navigate complex tax regulations,
-                minimize their tax liabilities and comply with tax laws to stay
-                compliant with tax laws and regulations and avoid penalties and
-                legal consequences. ZOLVEBIZ also provide strategic guidance to
-                help our clients achieve their financial goals and manage their
-                tax risks. We provide our services on an ongoing basis or on a
-                project basis, depending on the needs of our clients.
-                <br />
-                <br />
-                ZOLVEBIZ’s common areas of focus for tax advisory services
-                include:
-                <ul className="list-disc ml-4">
-                  <li>
-                    Tax planning and Optimization: We advise our clients on tax
-                    planning strategies that can help them minimize their tax
-                    liabilities.
-                  </li>
-                  <li>
-                    Compliance: Assisting our clients in complying with tax laws
-                    and regulations, including preparing and filing tax returns,
-                    responding to tax audits, and resolving tax disputes.
-                  </li>
-                  <li>
-                    International Tax: We advise our clients on cross-border tax
-                    issues related to global operations, including transfer
-                    pricing, withholding tax and tax treaty provisions.
-                  </li>
-                  <li>
-                    Mergers & Acquisitions: Advising our clients on tax
-                    implications of mergers and acquisitions, including due
-                    diligence and structuring transactions to minimize tax
-                    liabilities.
-                  </li>
-                  <li>
-                    Employee Compensation: We advise our clients on
-                    tax-efficient ways to compensate employees, including
-                    equity-based compensation plans.
-                  </li>
-                </ul>
-              </dd>
+            <div className="flex flex-col items-center justify-between w-full mx-auto max-w-7xl sm:flex-row-reverse gap-x-10">
+              <div className="w-full sm:w-1/2">
+                <h3 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">
+                  Income Tax & GST Advisory Services
+                </h3>
+                <p className="mt-3 text-base font-light leading-relaxed text-gray-600">
+                  ZOLVEBIZ provides tax advisory services to corporate and
+                  non-corporate clients, helping them comply with tax laws and
+                  regulations, minimize tax liabilities, and manage tax risks.
+                  Our services include tax planning and optimization, compliance
+                  assistance, international tax, mergers and acquisitions, and
+                  employee compensation. Our team advises on strategies to
+                  minimize tax liabilities, assists with compliance, advises on
+                  cross-border tax issues, provides due diligence and
+                  structuring advice, and advises on tax-efficient employee
+                  compensation plans.
+                </p>
+              </div>
+              <div className="w-full mt-6 sm:w-1/2">
+                <Image
+                  className="w-4/5 mx-auto"
+                  src={TaxImg}
+                  alt="Management Services"
+                />
+              </div>
             </div>
 
-            <div className="flex flex-col">
-              <dt className="font-bold text-gray-900 text-xl">
-                SEZ Compliance
-              </dt>
-              <dd className="mt-1 text-gray-600">
-                Special Economic Zones (SEZs) are designated areas within a
-                country that are created to promote economic growth by offering
-                various tax incentives and other benefits to businesses. To
-                operate within an SEZ, businesses must comply with certain
-                regulations and compliances.
-                <br />
-                <br />
-                ZOLVEBIZ’s SEZ compliances includes the following
-                <ul className="list-disc ml-4">
-                  <li>
-                    <b>Registration:</b> We assists clients in registering their
-                    businesses with the SEZ authority to obtain approval to
-                    operate within the zone.
-                  </li>
-                  <li>
-                    <b>Compliance with laws and regulations:</b> We ensures that
-                    clients comply with all applicable laws and regulations,
-                    including labour laws, environmental laws, and customs
-                    regulations.
-                  </li>
-                  <li>
-                    <b>Tax compliance:</b> We assists clients in complying with
-                    tax regulations and submitting regular reports to the SEZ
-                    authority to maintain eligibility for tax incentives.
-                  </li>
-                  <li>
-                    <b>Reporting requirements:</b> We help our clients in
-                    submitting regular reports to the SEZ authority, including
-                    financial reports, progress reports, and compliance reports.
-                  </li>
-                  <li>
-                    <b>Customs compliance:</b> We ensures that clients comply
-                    with customs regulations, including import and export
-                    procedures, documentation, and related requirements.
-                  </li>
-                  <li>
-                    <b>Environmental compliance:</b> We assists clients in
-                    complying with environmental regulations, including waste
-                    disposal, pollution control, and other related requirements.
-                  </li>
-                </ul>
-              </dd>
+            <div className="flex flex-col items-center justify-between w-full mx-auto max-w-7xl sm:flex-row gap-x-10">
+              <div className="w-full sm:w-1/2">
+                <h3 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">
+                  SEZ Compliance
+                </h3>
+                <p className="mt-3 text-base font-light leading-relaxed text-gray-600">
+                  ZOLVEBIZ offers SEZ compliance services to assist businesses
+                  in operating within Special Economic Zones while complying
+                  with applicable regulations. Our service includes registering
+                  with the SEZ authority, complying with labour and
+                  environmental laws, maintaining eligibility for tax
+                  incentives, and submitting regular reports. Our team ensures
+                  compliance with customs and environmental regulations, freeing
+                  up businesses to focus on their core operations.
+                </p>
+              </div>
+              <div className="w-full mt-6 sm:w-1/2">
+                <Image
+                  className="w-4/5 mx-auto"
+                  src={ManagementServicesImg}
+                  alt="Management Services"
+                />
+              </div>
             </div>
 
-            <div className="flex flex-col">
-              <dt className="font-bold text-gray-900 text-xl">
-                Foreign Exchange and RBI Compliance
-              </dt>
-              <dd className="mt-1 text-gray-600">
-                Foreign exchange and Reserve Bank of India (RBI) compliances are
-                important for businesses that engage in international
-                transactions or have foreign investment. RBI is the central bank
-                of India, responsible for regulating foreign exchange
-                transactions in the country.
-                <br />
-                <br />
-                ZOLVEBIZ’s foreign exchange and RBI compliances service
-                includes:
-                <ul className="list-disc ml-4">
-                  <li>
-                    We help our clients to file the Foreign Currency and/or
-                    Convertible Instrument (FCGPR) form with the RBI for any
-                    foreign investment in an Indian company.
-                  </li>
-                  <li>
-                    We assist our clients in filing the FCTRS form with the RBI
-                    in case of any transfer of shares or convertible securities
-                    between a resident and a non-resident.
-                  </li>
-                  <li>
-                    We help clients comply with the regulations under FEMA,
-                    including obtaining necessary approvals and reporting
-                    requirements.
-                  </li>
-                  <li>
-                    We assist our clients in reporting foreign exchange
-                    transactions, including inward and outward remittances, to
-                    the RBI through designated reporting platforms.
-                  </li>
-                  <li>
-                    We help our clients comply with AML regulations and report
-                    any suspicious transactions to the appropriate authorities.
-                  </li>
-                  <li>
-                    We assist our clients in complying with KYC regulations by
-                    identifying and verifying the identity of their customers
-                    and maintaining records of transactions.
-                  </li>
-                </ul>
-              </dd>
+            <div className="flex flex-col items-center justify-between w-full mx-auto max-w-7xl sm:flex-row-reverse gap-x-10">
+              <div className="w-full sm:w-1/2">
+                <h3 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">
+                  Tax Compliance
+                </h3>
+                <p className="mt-3 text-base font-light leading-relaxed text-gray-600">
+                  ZOLVEBIZ provides tax compliance services to assist businesses
+                  in meeting their statutory and regulatory tax requirements.
+                  Our services include preparation and review of income tax
+                  returns, e- TDS returns, and GST returns, and obtaining tax
+                  registrations. We also conduct periodic reviews of tax
+                  compliances and assists with any other related matters.
+                  ZOLVEBIZ’s services helps businesses avoid penalties and
+                  ensure efficient management of tax compliance.
+                </p>
+              </div>
+              <div className="w-full mt-6 sm:w-1/2">
+                <Image
+                  className="w-4/5 mx-auto"
+                  src={TaxImg}
+                  alt="Management Services"
+                />
+              </div>
             </div>
-          </dl>
+          </div>
         </div>
       </main>
 
       {/* Footer */}
-      <footer className="mx-auto mt-16 max-w-7xl overflow-hidden px-6 pb-20 sm:mt-24 sm:pb-24 lg:px-8">
-        <div className="mt-10 flex justify-center space-x-10">
+      <footer className="px-6 pb-20 mx-auto mt-16 overflow-hidden max-w-7xl sm:mt-24 sm:pb-24 lg:px-8">
+        <div className="flex justify-center mt-10 space-x-10">
           {footerNavigation.social.map((item) => (
             <a
               key={item.name}
@@ -362,11 +277,11 @@ export default function Example() {
               className="text-gray-400 hover:text-gray-500"
             >
               <span className="sr-only">{item.name}</span>
-              <item.icon className="h-6 w-6" aria-hidden="true" />
+              <item.icon className="w-6 h-6" aria-hidden="true" />
             </a>
           ))}
         </div>
-        <p className="mt-10 text-center text-xs leading-5 text-gray-500">
+        <p className="mt-10 text-xs leading-5 text-center text-gray-500">
           &copy; 2023 Zolvebiz, Inc. All rights reserved.
         </p>
       </footer>

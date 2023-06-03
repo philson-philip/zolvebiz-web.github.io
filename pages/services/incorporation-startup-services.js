@@ -3,6 +3,8 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Logo from "../../public/images/logo.png";
+import ManagementServicesImg from "../../public/images/management.svg";
+import TaxImg from "../../public/images/tax.svg";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -60,12 +62,12 @@ export default function Example() {
       {/* Header */}
       <header className="absolute inset-x-0 top-0 z-50">
         <nav
-          className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 lg:justify-start"
+          className="flex items-center justify-between p-6 mx-auto max-w-7xl lg:px-8 lg:justify-start"
           aria-label="Global"
         >
           <a href={`/`} className="-m-1.5 p-1.5">
             <span className="sr-only">Zolvebiz</span>
-            <Image alt="Zolvebiz" className="h-12 w-auto" src={Logo} />
+            <Image alt="Zolvebiz" className="w-auto h-12" src={Logo} />
           </a>
           <div className="flex lg:hidden">
             <button
@@ -74,10 +76,10 @@ export default function Example() {
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className="sr-only">Open main menu</span>
-              <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+              <Bars3Icon className="w-6 h-6" aria-hidden="true" />
             </button>
           </div>
-          <div className="lg:ml-12 lg:flex lg:gap-x-14 hidden">
+          <div className="hidden lg:ml-12 lg:flex lg:gap-x-14">
             {navigation.map((item) => (
               <a
                 key={item.name}
@@ -96,11 +98,11 @@ export default function Example() {
           onClose={setMobileMenuOpen}
         >
           <div className="fixed inset-0 z-50" />
-          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full px-6 py-6 overflow-y-auto bg-white sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href={`/`} className="-m-1.5 p-1.5">
                 <span className="sr-only">Zolvebiz</span>
-                <Image alt="Zolvebiz" className="h-12 w-auto" src={Logo} />
+                <Image alt="Zolvebiz" className="w-auto h-12" src={Logo} />
               </a>
               <button
                 type="button"
@@ -108,17 +110,17 @@ export default function Example() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span className="sr-only">Close menu</span>
-                <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+                <XMarkIcon className="w-6 h-6" aria-hidden="true" />
               </button>
             </div>
-            <div className="mt-6 flow-root">
+            <div className="flow-root mt-6">
               <div className="-my-6 divide-y divide-gray-500/10">
-                <div className="space-y-2 py-6">
+                <div className="py-6 space-y-2">
                   {navigation.map((item) => (
                     <a
                       key={item.name}
                       href={item.href}
-                      className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      className="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50"
                     >
                       {item.name}
                     </a>
@@ -143,8 +145,8 @@ export default function Example() {
         </div> */}
 
         {/* Values section */}
-        <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
-          <div className="mx-auto max-w-3xl lg:mx-0">
+        <div className="px-6 mx-auto mt-32 max-w-7xl sm:mt-40 lg:px-8">
+          <div className="max-w-3xl mx-auto lg:mx-0">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               Incorporation & Startup Services
             </h2>
@@ -156,92 +158,109 @@ export default function Example() {
               advertising.
             </p>
           </div>
-          <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 lg:mx-0 lg:max-w-none">
-            <div className="flex flex-col">
-              <dd className="mt-1 text-gray-600">
-                Incorporation refers to the process of creating a legal entity
-                for your business. Once you have a business idea, next step is
-                to give your business a structure. By incorporating, you can
-                protect your personal assets from any liabilities that may arise
-                from the operation of your business. Additionally, incorporating
-                can make it easier to raise funds, hire employees, and enter
-                into contracts.
-                <br />
-                <br />
-                The business structure you choose influences everything from
-                day-to-day operations, taxes benefits your ability to raise
-                money and your personal liability. ZOLVEBIZ helps our clients to
-                choose a business structure that gives them the right balance of
-                legal protections and benefits.
-                <br />
-                <br />
-                Once the business is given a structure, the next step is to
-                obtain necessary approvals and licenses as per the guiding
-                statute. We provide our clients with an A to Z solution for
-                structuring the entity to registrations and license requirements
-                under different statues for commencement of business.
-                <br />
-                <br />
-                Start-ups can be exciting, but they can also be risky, as many
-                new businesses fail within the first few years. However, with
-                the right combination of VISION, TALENT & EXECUTION, start-ups
-                can achieve rapid growth and create significant value for their
-                founders and investors.
-                <br />
-                <br />
-                ZOLVEBIZ’s start-up services encompass a variety of different
-                offerings. This includes:
-                <ul className="list-disc ml-4">
-                  <li>
-                    Conduct a Thorough Assessment: ZOLBEBIZ’s start up services
-                    start by conducting a thorough assessment of the
-                    start-up&apos;s business model, market, competitors, and
-                    target customers. This will give our clients an idea of the
-                    challenges and opportunities that the start-up is facing.
-                  </li>
-                  <li>
-                    Develop a Business Plan: Based on our assessment, we provide
-                    the start-up’s a comprehensive business plan. This plan
-                    includes a clear strategy, realistic goals, financial
-                    projections, and a timeline for achieving those goals.
-                  </li>
-                  <li>
-                    Provide Strategic Guidance: ZOLBEBIZ provide the start-ups
-                    with strategic guidance on various aspects of their
-                    business, including product development, marketing, sales,
-                    operations, and customer service. We also help them to
-                    identify the areas where they can improve and grow.
-                  </li>
-                  <li>
-                    Connect them with Resources: We use our network to connect
-                    the start-up with valuable resources, such as investors,
-                    mentors, and other industry experts. This will help
-                    start-ups gain exposure and learn from the experiences of
-                    others.
-                  </li>
-                  <li>
-                    Offer Ongoing Support: ZOLBEBIZ offer ongoing support to the
-                    start-up’s, even after the initial phase of consultancy has
-                    ended. Our ongoing support includes regular check-ins,
-                    ongoing advice, and access to additional resources.
-                  </li>
-                  <li>
-                    Encourage Innovation: ZOLVEBIZ encourage the start-ups to
-                    continue innovating and finding new ways to differentiate
-                    themselves from their competitors. We help them to stay
-                    up-to-date with the latest trends and technologies in their
-                    industry.
-                  </li>
-                </ul>
-              </dd>
+          <div className="flex flex-col space-y-8 mt-14">
+            <div className="flex flex-col items-center justify-between w-full mx-auto max-w-7xl sm:flex-row gap-x-10">
+              <div className="w-full sm:w-1/2">
+                <h3 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">
+                  Corporate Secretarial Services
+                </h3>
+                <p className="mt-3 text-base font-light leading-relaxed text-gray-600">
+                  ZOLEVBIZ&apos;s Corporate Secretarial services involve
+                  providing assistance and expertise in managing the legal and
+                  administrative aspects of a company&apos;s corporate
+                  governance and compliance obligations. Key areas of focus
+                  involves company formation and structuring, compliance with
+                  laws and regulations, board support, shareholder
+                  communication, statutory compliance, corporate record keeping,
+                  corporate governance advisory, corporate restructuring and
+                  transactions Overall, our corporate secretarial services play
+                  a crucial role in ensuring that a company meets its legal and
+                  regulatory obligations, maintains good corporate governance
+                  practices, and effectively manages its administrative tasks.
+                  By outsourcing these services to as ensure companies to focus
+                  on their core business activities while ensuring compliance
+                  and proper corporate governance.
+                </p>
+              </div>
+              <div className="w-full mt-6 sm:w-1/2">
+                <Image
+                  className="w-4/5 mx-auto"
+                  src={ManagementServicesImg}
+                  alt="Management Services"
+                />
+              </div>
             </div>
-          </dl>
+
+            <div className="flex flex-col items-center justify-between w-full mx-auto max-w-7xl sm:flex-row-reverse gap-x-10">
+              <div className="w-full sm:w-1/2">
+                <h3 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">
+                  Incorporation Services
+                </h3>
+                <p className="mt-3 text-base font-light leading-relaxed text-gray-600">
+                  ZOLVEBIZ&apos;s incorporation services provide valuable
+                  guidance to our clients. When providing incorporation
+                  services, our role as a consultant would involve assisting
+                  clients in understanding the different types of legal entities
+                  available for incorporation, such as companies, limited
+                  liability partnership (LLPs), partnerships, and sole
+                  proprietorships. We help or clients to choose the most
+                  suitable entity based on factors such as liability protection,
+                  taxation, ownership structure, and operational requirements.
+                  <br />
+                  Key aspects of ZOLVEBIZ’s incorporation service:
+                </p>
+                <ul className="mt-2 ml-4 text-base font-light leading-relaxed text-gray-600 list-disc">
+                  <li>Entity Selection</li>
+                  <li>Documentation and Compliance</li>
+                  <li>Name and Branding</li>
+                  <li>Licensing and permits</li>
+                  <li>Tax consideration</li>
+                  <li>Ongoing Support</li>
+                </ul>
+              </div>
+              <div className="w-full mt-6 sm:w-1/2">
+                <Image
+                  className="w-4/5 mx-auto"
+                  src={TaxImg}
+                  alt="Management Services"
+                />
+              </div>
+            </div>
+
+            <div className="flex flex-col items-center justify-between w-full mx-auto max-w-7xl sm:flex-row gap-x-10">
+              <div className="w-full sm:w-1/2">
+                <h3 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">
+                  Registration Services
+                </h3>
+                <p className="mt-3 text-base font-light leading-relaxed text-gray-600">
+                  ZOLVEBIZ offer various registration services to corporate and
+                  non corporate clients, such as
+                </p>
+                <ul className="mt-2 ml-4 text-base font-light leading-relaxed text-gray-600 list-disc">
+                  <li>Company Registration</li>
+                  <li>GST Registration</li>
+                  <li>Trade Mark Registration</li>
+                  <li>Import Export Code (IEC) Registration</li>
+                  <li>Employee Provident Fund (EPF) Registration</li>
+                  <li>Professional Licenses and Certifications</li>
+                  <li>Intellectual Property Registration</li>
+                </ul>
+              </div>
+              <div className="w-full mt-6 sm:w-1/2">
+                <Image
+                  className="w-4/5 mx-auto"
+                  src={ManagementServicesImg}
+                  alt="Management Services"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </main>
 
       {/* Footer */}
-      <footer className="mx-auto mt-16 max-w-7xl overflow-hidden px-6 pb-20 sm:mt-24 sm:pb-24 lg:px-8">
-        <div className="mt-10 flex justify-center space-x-10">
+      <footer className="px-6 pb-20 mx-auto mt-16 overflow-hidden max-w-7xl sm:mt-24 sm:pb-24 lg:px-8">
+        <div className="flex justify-center mt-10 space-x-10">
           {footerNavigation.social.map((item) => (
             <a
               key={item.name}
@@ -249,11 +268,11 @@ export default function Example() {
               className="text-gray-400 hover:text-gray-500"
             >
               <span className="sr-only">{item.name}</span>
-              <item.icon className="h-6 w-6" aria-hidden="true" />
+              <item.icon className="w-6 h-6" aria-hidden="true" />
             </a>
           ))}
         </div>
-        <p className="mt-10 text-center text-xs leading-5 text-gray-500">
+        <p className="mt-10 text-xs leading-5 text-center text-gray-500">
           &copy; 2023 Zolvebiz, Inc. All rights reserved.
         </p>
       </footer>
