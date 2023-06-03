@@ -4,8 +4,11 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "../../public/images/logo.png";
-import ManagementServicesImg from "../../public/images/management.svg";
-import TaxImg from "../../public/images/tax.svg";
+import AccountingAdvisoryServicesImg from "../../public/images/acounting-advisory-services.svg";
+import AuditSupportServicesImg from "../../public/images/audit-support-services.svg";
+import BookkeepingServicesImg from "../../public/images/bookkeeping-services.svg";
+import InternalAuditImg from "../../public/images/internal-audit.svg";
+import PayrollManagementImg from "../../public/images/payroll-management.svg";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -158,13 +161,6 @@ export default function Example() {
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               Financial & Accounting
             </h2>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              Financial & accounting services involve the management of
-              financial information, including financial reporting, bookkeeping,
-              and tax preparation. These services are critical to ensuring that
-              businesses maintain accurate financial records and comply with
-              relevant regulations.
-            </p>
           </div>
           <div className="flex flex-col space-y-8 mt-14">
             <div className="flex flex-col items-center justify-between w-full mx-auto max-w-7xl sm:flex-row gap-x-10">
@@ -188,7 +184,7 @@ export default function Example() {
               <div className="w-full mt-6 sm:w-1/2">
                 <Image
                   className="w-4/5 mx-auto"
-                  src={ManagementServicesImg}
+                  src={AccountingAdvisoryServicesImg}
                   alt="Management Services"
                 />
               </div>
@@ -213,7 +209,7 @@ export default function Example() {
               <div className="w-full mt-6 sm:w-1/2">
                 <Image
                   className="w-4/5 mx-auto"
-                  src={TaxImg}
+                  src={AuditSupportServicesImg}
                   alt="Management Services"
                 />
               </div>
@@ -239,7 +235,7 @@ export default function Example() {
               <div className="w-full mt-6 sm:w-1/2">
                 <Image
                   className="w-4/5 mx-auto"
-                  src={ManagementServicesImg}
+                  src={BookkeepingServicesImg}
                   alt="Management Services"
                 />
               </div>
@@ -265,7 +261,7 @@ export default function Example() {
               <div className="w-full mt-6 sm:w-1/2">
                 <Image
                   className="w-4/5 mx-auto"
-                  src={TaxImg}
+                  src={InternalAuditImg}
                   alt="Management Services"
                 />
               </div>
@@ -290,7 +286,7 @@ export default function Example() {
               <div className="w-full mt-6 sm:w-1/2">
                 <Image
                   className="w-4/5 mx-auto"
-                  src={ManagementServicesImg}
+                  src={PayrollManagementImg}
                   alt="Management Services"
                 />
               </div>

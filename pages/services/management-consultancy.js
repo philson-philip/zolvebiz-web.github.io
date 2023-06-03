@@ -4,7 +4,11 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "../../public/images/logo.png";
-import ManagementServicesImg from "../../public/images/management.svg";
+import BusinessProjectReportImg from "../../public/images/business-project-report.svg";
+import BusinessValuationImg from "../../public/images/business-valuation.svg";
+import BusinessStrategyImg from "../../public/images/business-strategy.svg";
+import ManagementAccountingServiceImg from "../../public/images/accounting-service.svg";
+import VirtualCFOImg from "../../public/images/virtual-cfo.svg";
 import TaxImg from "../../public/images/tax.svg";
 
 const navigation = [
@@ -158,14 +162,6 @@ export default function Example() {
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               Management Consultancy
             </h2>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              Management consultancy involves providing expert advice and
-              guidance to businesses and organizations on improving their
-              operations, efficiency, and overall performance. Consultants use
-              their knowledge and experience to identify problems, develop
-              solutions, and implement strategies to help clients achieve their
-              goals.
-            </p>
           </div>
           <div className="flex flex-col space-y-8 mt-14">
             <div className="flex flex-col items-center justify-between w-full mx-auto max-w-7xl sm:flex-row gap-x-10">
@@ -186,7 +182,7 @@ export default function Example() {
               <div className="w-full mt-6 sm:w-1/2">
                 <Image
                   className="w-4/5 mx-auto"
-                  src={ManagementServicesImg}
+                  src={BusinessProjectReportImg}
                   alt="Management Services"
                 />
               </div>
@@ -211,7 +207,7 @@ export default function Example() {
               <div className="w-full mt-6 sm:w-1/2">
                 <Image
                   className="w-4/5 mx-auto"
-                  src={TaxImg}
+                  src={BusinessValuationImg}
                   alt="Management Services"
                 />
               </div>
@@ -235,7 +231,7 @@ export default function Example() {
               <div className="w-full mt-6 sm:w-1/2">
                 <Image
                   className="w-4/5 mx-auto"
-                  src={ManagementServicesImg}
+                  src={BusinessStrategyImg}
                   alt="Management Services"
                 />
               </div>
@@ -260,7 +256,7 @@ export default function Example() {
               <div className="w-full mt-6 sm:w-1/2">
                 <Image
                   className="w-4/5 mx-auto"
-                  src={TaxImg}
+                  src={ManagementAccountingServiceImg}
                   alt="Management Services"
                 />
               </div>
@@ -285,7 +281,7 @@ export default function Example() {
               <div className="w-full mt-6 sm:w-1/2">
                 <Image
                   className="w-4/5 mx-auto"
-                  src={ManagementServicesImg}
+                  src={VirtualCFOImg}
                   alt="Management Services"
                 />
               </div>

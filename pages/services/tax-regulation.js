@@ -4,8 +4,10 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "../../public/images/logo.png";
-import ManagementServicesImg from "../../public/images/management.svg";
-import TaxImg from "../../public/images/tax.svg";
+import ForeignExchangeComplianceImg from "../../public/images/foreign-exchange-and-rbi-complaince.svg";
+import IncomeTaxGSTAdvisoryImg from "../../public/images/income-tax-and-gst-advisory.svg";
+import SEZComplianceImg from "../../public/images/sez-compliance.svg";
+import TaxComplianceImg from "../../public/images/tax-compliance.svg";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -157,14 +159,6 @@ export default function Example() {
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               Tax & Regulation
             </h2>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              Tax & regulation are important factors that affect businesses and
-              individuals, as they determine the amount of taxes to be paid and
-              the rules that must be followed to avoid penalties and legal
-              issues. Consulting services in this area can help navigate the
-              complexities of tax and regulatory compliance, reducing risks and
-              maximizing benefits.
-            </p>
           </div>
           <div className="flex flex-col space-y-8 mt-14">
             <div className="flex flex-col items-center justify-between w-full mx-auto max-w-7xl sm:flex-row gap-x-10">
@@ -189,7 +183,7 @@ export default function Example() {
               <div className="w-full mt-6 sm:w-1/2">
                 <Image
                   className="w-4/5 mx-auto"
-                  src={ManagementServicesImg}
+                  src={ForeignExchangeComplianceImg}
                   alt="Management Services"
                 />
               </div>
@@ -216,7 +210,7 @@ export default function Example() {
               <div className="w-full mt-6 sm:w-1/2">
                 <Image
                   className="w-4/5 mx-auto"
-                  src={TaxImg}
+                  src={IncomeTaxGSTAdvisoryImg}
                   alt="Management Services"
                 />
               </div>
@@ -241,7 +235,7 @@ export default function Example() {
               <div className="w-full mt-6 sm:w-1/2">
                 <Image
                   className="w-4/5 mx-auto"
-                  src={ManagementServicesImg}
+                  src={SEZComplianceImg}
                   alt="Management Services"
                 />
               </div>
@@ -266,7 +260,7 @@ export default function Example() {
               <div className="w-full mt-6 sm:w-1/2">
                 <Image
                   className="w-4/5 mx-auto"
-                  src={TaxImg}
+                  src={TaxComplianceImg}
                   alt="Management Services"
                 />
               </div>
