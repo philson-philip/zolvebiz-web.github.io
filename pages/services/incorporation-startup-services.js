@@ -19,21 +19,8 @@ const navigation = [
 const footerNavigation = {
   social: [
     {
-      name: "Facebook",
-      href: "#",
-      icon: (props) => (
-        <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
-          <path
-            fillRule="evenodd"
-            d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-            clipRule="evenodd"
-          />
-        </svg>
-      ),
-    },
-    {
       name: "Instagram",
-      href: "#",
+      href: "https://www.instagram.com/zolvebizconsulting/",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -45,11 +32,21 @@ const footerNavigation = {
       ),
     },
     {
-      name: "Twitter",
-      href: "#",
+      name: "LinkedIn",
+      href: "https://www.linkedin.com/in/zolvebiz-consulting-group-a18b21266/",
       icon: (props) => (
-        <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
-          <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+        <svg
+          fill="currentColor"
+          height="24px"
+          viewBox="0 0 67 67"
+          width="24px"
+          {...props}
+        >
+          <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M49.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H49.837z M21.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H21.959z M33,64  C16.432,64,3,50.568,3,34C3,17.431,16.432,4,33,4s30,13.431,30,30C63,50.568,49.568,64,33,64z M25.354,48.137V27.71h-6.789v20.427  H25.354z"
+          />
         </svg>
       ),
     },
@@ -166,7 +163,7 @@ export default function Example() {
                 <h3 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">
                   Corporate Secretarial Services
                 </h3>
-                <p className="mt-3 text-base font-light leading-relaxed text-gray-600">
+                <p className="mt-3 text-base leading-7 text-gray-600">
                   ZOLEVBIZ&apos;s Corporate Secretarial services involve
                   providing assistance and expertise in managing the legal and
                   administrative aspects of a company&apos;s corporate
@@ -198,7 +195,7 @@ export default function Example() {
                 <h3 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">
                   Incorporation Services
                 </h3>
-                <p className="mt-3 text-base font-light leading-relaxed text-gray-600">
+                <p className="mt-3 text-base leading-7 text-gray-600">
                   ZOLVEBIZ&apos;s incorporation services provide valuable
                   guidance to our clients. When providing incorporation
                   services, our role as a consultant would involve assisting
@@ -211,7 +208,7 @@ export default function Example() {
                   <br />
                   Key aspects of ZOLVEBIZ’s incorporation service:
                 </p>
-                <ul className="mt-2 ml-4 text-base font-light leading-relaxed text-gray-600 list-disc">
+                <ul className="mt-2 ml-4 text-base leading-7 text-gray-600 list-disc">
                   <li>Entity Selection</li>
                   <li>Documentation and Compliance</li>
                   <li>Name and Branding</li>
@@ -234,11 +231,11 @@ export default function Example() {
                 <h3 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">
                   Registration Services
                 </h3>
-                <p className="mt-3 text-base font-light leading-relaxed text-gray-600">
+                <p className="mt-3 text-base leading-7 text-gray-600">
                   ZOLVEBIZ offer various registration services to corporate and
                   non corporate clients, such as
                 </p>
-                <ul className="mt-2 ml-4 text-base font-light leading-relaxed text-gray-600 list-disc">
+                <ul className="mt-2 ml-4 text-base leading-7 text-gray-600 list-disc">
                   <li>Company Registration</li>
                   <li>GST Registration</li>
                   <li>Trade Mark Registration</li>
@@ -267,6 +264,7 @@ export default function Example() {
             <a
               key={item.name}
               href={item.href}
+              target="_blank"
               className="text-gray-400 hover:text-gray-500"
             >
               <span className="sr-only">{item.name}</span>
@@ -274,7 +272,7 @@ export default function Example() {
             </a>
           ))}
         </div>
-        <p className="mt-10 text-xs leading-5 text-center text-gray-500">
+        <p className="mt-10 text-sm leading-5 text-center text-gray-500">
           &copy; 2023 Zolvebiz, Inc. All rights reserved.
         </p>
       </footer>

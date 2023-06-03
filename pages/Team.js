@@ -44,11 +44,9 @@ export default function Example() {
             Our Team
           </h2>
           <p className="mt-4 text-lg leading-8 text-gray-600">
-            At our business consulting firm, we pride ourselves on having a team
-            of highly skilled and experienced professionals. Our consultants
-            come from diverse backgrounds and possess a wide range of expertise,
-            enabling us to provide comprehensive solutions to our clients&apos;
-            unique business challenges.
+            At our business consulting firm, we boast a team of highly skilled
+            and experienced professionals from diverse backgrounds, offering
+            comprehensive solutions to address unique business challenges.
           </p>
         </div>
         <ul

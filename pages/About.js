@@ -9,7 +9,7 @@ export default function About() {
           About Us
         </h1>
 
-        <div className="max-w-5xl text-base leading-7 text-justify text-gray-700">
+        <div className="max-w-5xl text-base leading-7 text-justify text-gray-800">
           <p>
             Welcome to ZOLVEBIZ, a business consultancy firm dedicated to
             helping businesses of all sizes thrive and succeed. Our team of

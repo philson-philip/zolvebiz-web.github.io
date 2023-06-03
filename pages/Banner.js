@@ -136,7 +136,7 @@ export default function Banner() {
                 <h1 className="text-3xl font-bold tracking-wide text-gray-800 sm:text-5xl">
                   Partnering for your business growth
                 </h1>
-                <p className="mt-6 text-base leading-8 text-gray-600">
+                <p className="mt-6 text-base leading-7 text-gray-700">
                   Transforming businesses through expert guidance and strategic
                   solutions. Partner with us to unlock your company&apos;s
                   full potential.

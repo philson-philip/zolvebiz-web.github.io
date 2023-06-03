@@ -12,13 +12,10 @@ export default function Services() {
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Our Services
           </p>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
-            We are passionate about our business and proud of our longstanding
-            expertise and pleasing number of satisfied clients. We guarantee
-            every client an efficient service that exceeds their expectation. We
-            are open and honest and strive to provide pro-active business advice
-            that helps businesses and individuals meet their commercial
-            obligations and help to take decision for proper investment on time
+          <p className="mt-6 text-lg leading-8 text-gray-700">
+            We are a dedicated business consultancy firm with extensive
+            expertise and a track record of satisfying our clients, committed to
+            delivering efficient services that surpass expectations.
           </p>
         </div>
         <div className="flex flex-col space-y-8 mt-14">
@@ -27,7 +24,7 @@ export default function Services() {
               <h3 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">
                 Management Consultancy
               </h3>
-              <ul className="mt-3 ml-4 text-base font-light leading-relaxed text-gray-600 list-disc">
+              <ul className="mt-3 ml-4 text-base leading-relaxed text-gray-800 list-disc">
                 <li>Business Project Report</li>
                 <li>Business Valuation</li>
                 <li>Franchise Business Strategy</li>
@@ -57,7 +54,7 @@ export default function Services() {
               <h3 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">
                 Tax & Regulation
               </h3>
-              <ul className="mt-3 ml-4 text-base font-light leading-relaxed text-gray-600 list-disc">
+              <ul className="mt-3 ml-4 text-base leading-relaxed text-gray-800 list-disc">
                 <li>Foreign Exchange and RBI Compliance</li>
                 <li>Income Tax and GST Advisory</li>
                 <li>SEZ Compliance</li>
@@ -86,7 +83,7 @@ export default function Services() {
               <h3 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">
                 Financial & Accounting
               </h3>
-              <ul className="mt-3 ml-4 text-base font-light leading-relaxed text-gray-600 list-disc">
+              <ul className="mt-3 ml-4 text-base leading-relaxed text-gray-800 list-disc">
                 <li>Accounting Advisory Services</li>
                 <li>Audit Support Services</li>
                 <li>Bookkeeping Services</li>
@@ -116,7 +113,7 @@ export default function Services() {
               <h3 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">
                 Incorporation & Startup Services
               </h3>
-              <ul className="mt-3 ml-4 text-base font-light leading-relaxed text-gray-600 list-disc">
+              <ul className="mt-3 ml-4 text-base leading-relaxed text-gray-800 list-disc">
                 <li>Corporate Secretarial Services</li>
                 <li>Incorporation Services</li>
                 <li>Registration Services</li>

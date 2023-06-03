@@ -43,13 +43,13 @@ export default function Contact() {
               We’re here to help
             </p>
             <p className="mt-6 text-base leading-7 text-gray-300">
-              Contact our CA consulting firm today for expert advice and
-              tailored solutions to optimize your business&apos;s financial
-              success. Reach out now and let us help you thrive.
+              Contact our consultancy firm today for expert advice and tailored
+              solutions to optimize your business&apos;s financial success.
+              Reach out now and let us help you thrive.
             </p>
             <div className="mt-4">
               <h3 className="text-lg font-medium text-white">Office Address</h3>
-              <div className="mt-2 space-y-1 text-base font-light text-gray-300">
+              <div className="mt-2 space-y-1 text-base   text-gray-300">
                 <p>KV Nagar, Panampilly Nagar</p>
                 <p>Ernakulam, Kerala 682036</p>
               </div>
@@ -74,7 +74,7 @@ export default function Contact() {
                     ></path>
                   </svg>
                 </div>
-                <div className="ml-3 text-base font-light text-gray-300">
+                <div className="ml-3 text-base   text-gray-300">
                   <p>+91 6282800328</p>
                 </div>
               </div>
@@ -96,7 +96,7 @@ export default function Contact() {
                     ></path>
                   </svg>
                 </div>
-                <div className="ml-3 text-base font-light text-gray-300">
+                <div className="ml-3 text-base   text-gray-300">
                   <p>+91 9745380701</p>
                 </div>
               </div>
@@ -118,7 +118,7 @@ export default function Contact() {
                     ></path>
                   </svg>
                 </div>
-                <div className="ml-3 text-base font-light text-gray-300">
+                <div className="ml-3 text-base   text-gray-300">
                   <p>info@zolvebiz.com</p>
                 </div>
               </div>
