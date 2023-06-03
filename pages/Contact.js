@@ -48,18 +48,18 @@ export default function Contact() {
               success. Reach out now and let us help you thrive.
             </p>
             <div className="mt-4">
-              <h3 class="text-lg font-medium text-white">Office Address</h3>
-              <div class="mt-2 text-base font-light text-gray-300 space-y-1">
+              <h3 className="text-lg font-medium text-white">Office Address</h3>
+              <div className="mt-2 space-y-1 text-base font-light text-gray-300">
                 <p>KV Nagar, Panampilly Nagar</p>
                 <p>Ernakulam, Kerala 682036</p>
               </div>
             </div>
             <div className="mt-4">
-              <h3 class="text-lg font-medium text-white">Support</h3>
-              <div class="mt-2 flex">
-                <div class="flex-shrink-0">
+              <h3 className="text-lg font-medium text-white">Support</h3>
+              <div className="flex mt-2">
+                <div className="flex-shrink-0">
                   <svg
-                    class="h-6 w-6 text-gray-400"
+                    className="w-6 h-6 text-gray-400"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -67,21 +67,21 @@ export default function Contact() {
                     aria-hidden="true"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                     ></path>
                   </svg>
                 </div>
-                <div class="ml-3 text-base font-light text-gray-300">
+                <div className="ml-3 text-base font-light text-gray-300">
                   <p>+91 6282800328</p>
                 </div>
               </div>
-              <div class="mt-2 flex">
-                <div class="flex-shrink-0">
+              <div className="flex mt-2">
+                <div className="flex-shrink-0">
                   <svg
-                    class="h-6 w-6 text-gray-400"
+                    className="w-6 h-6 text-gray-400"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -89,21 +89,21 @@ export default function Contact() {
                     aria-hidden="true"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                     ></path>
                   </svg>
                 </div>
-                <div class="ml-3 text-base font-light text-gray-300">
+                <div className="ml-3 text-base font-light text-gray-300">
                   <p>+91 9745380701</p>
                 </div>
               </div>
-              <div class="mt-2 flex">
-                <div class="flex-shrink-0">
+              <div className="flex mt-2">
+                <div className="flex-shrink-0">
                   <svg
-                    class="h-6 w-6 text-gray-400"
+                    className="w-6 h-6 text-gray-400"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -111,14 +111,14 @@ export default function Contact() {
                     aria-hidden="true"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                     ></path>
                   </svg>
                 </div>
-                <div class="ml-3 text-base font-light text-gray-300">
+                <div className="ml-3 text-base font-light text-gray-300">
                   <p>info@zolvebiz.com</p>
                 </div>
               </div>

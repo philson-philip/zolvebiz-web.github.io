@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
+import Link from "next/link";
 import Logo from "../public/images/logo.png";
 import BannerIMG from "../public/images/banner.jpg";
 import ZolvebizIMG from "../public/images/zolvebiz.png";
@@ -62,6 +63,13 @@ export default function Banner() {
                     {item.name}
                   </a>
                 ))}
+                <Link
+                  href="https://zolvebiz.substack.com/"
+                  target="_blank"
+                  className="text-sm font-semibold leading-6 text-gray-900"
+                >
+                  Blog
+                </Link>
               </div>
             </nav>
           </div>
