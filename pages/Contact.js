@@ -49,9 +49,10 @@ export default function Contact() {
             </p>
             <div className="mt-4">
               <h3 className="text-lg font-medium text-white">Office Address</h3>
-              <div className="mt-2 space-y-1 text-base   text-gray-300">
-                <p>KV Nagar, Panampilly Nagar</p>
-                <p>Ernakulam, Kerala 682036</p>
+              <div className="mt-2 space-y-1 text-base text-gray-300">
+                <p>55/2934, J& L Arcade, 1st cross</p>
+                <p>Cheruparambathu Road, Kadavanthra</p>
+                <p>Kochi, Kerala - 682020</p>
               </div>
             </div>
             <div className="mt-4">
@@ -74,7 +75,7 @@ export default function Contact() {
                     ></path>
                   </svg>
                 </div>
-                <div className="ml-3 text-base   text-gray-300">
+                <div className="ml-3 text-base text-gray-300">
                   <p>+91 6282800328</p>
                 </div>
               </div>
@@ -96,7 +97,7 @@ export default function Contact() {
                     ></path>
                   </svg>
                 </div>
-                <div className="ml-3 text-base   text-gray-300">
+                <div className="ml-3 text-base text-gray-300">
                   <p>+91 9745380701</p>
                 </div>
               </div>
@@ -118,7 +119,7 @@ export default function Contact() {
                     ></path>
                   </svg>
                 </div>
-                <div className="ml-3 text-base   text-gray-300">
+                <div className="ml-3 text-base text-gray-300">
                   <p>info@zolvebiz.com</p>
                 </div>
               </div>
